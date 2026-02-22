@@ -1474,12 +1474,12 @@ export default function HomePage() {
       {/* ---------------------------------------------------------- */}
       <footer className="bg-white border-t border-slate-200" role="contentinfo">
         {/* SEO Links Section */}
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-8">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Skills */}
             <div>
-              <h2 className="text-[13px] font-bold text-slate-900 mb-2">Skills</h2>
-              <ul className="space-y-1 text-xs">
+              <h2 className="text-sm font-bold text-slate-900 mb-3">Skills</h2>
+              <ul className="space-y-2 text-sm">
                 {[
                   ["Artificial Intelligence (AI)", "/courses?query=artificial+intelligence"],
                   ["Cybersecurity", "/courses?query=cybersecurity"],
@@ -1498,8 +1498,8 @@ export default function HomePage() {
             </div>
             {/* Certificates & Programs */}
             <div>
-              <h2 className="text-[13px] font-bold text-slate-900 mb-2">Certificates &amp; Programs</h2>
-              <ul className="space-y-1 text-xs">
+              <h2 className="text-sm font-bold text-slate-900 mb-3">Certificates &amp; Programs</h2>
+              <ul className="space-y-2 text-sm">
                 {[
                   ["Google Cybersecurity Certificate", "/professional-certificates/google-cybersecurity"],
                   ["Google Data Analytics Certificate", "/professional-certificates/google-data-analytics"],
@@ -1518,8 +1518,8 @@ export default function HomePage() {
             </div>
             {/* Industries & Careers */}
             <div>
-              <h2 className="text-[13px] font-bold text-slate-900 mb-2">Industries &amp; Careers</h2>
-              <ul className="space-y-1 text-xs">
+              <h2 className="text-sm font-bold text-slate-900 mb-3">Industries &amp; Careers</h2>
+              <ul className="space-y-2 text-sm">
                 {[
                   ["Business", "/courses?query=business&topic=Business"],
                   ["Computer Science", "/courses?query=computer+science&topic=Computer+Science"],
@@ -1538,8 +1538,8 @@ export default function HomePage() {
             </div>
             {/* Career Resources */}
             <div>
-              <h2 className="text-[13px] font-bold text-slate-900 mb-2">Career Resources</h2>
-              <ul className="space-y-1 text-xs">
+              <h2 className="text-sm font-bold text-slate-900 mb-3">Career Resources</h2>
+              <ul className="space-y-2 text-sm">
                 {[
                   ["Career Aptitude Test", "/resources/career-quiz"],
                   ["Examples of Strengths and Weaknesses for Job Interviews", "/articles/strengths-and-weaknesses-interview"],
@@ -1561,12 +1561,12 @@ export default function HomePage() {
 
         {/* Main Footer Section */}
         <div className="border-t border-slate-200">
-          <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-10">
+          <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-14">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {/* Coursera */}
               <div>
-                <h2 className="text-[13px] font-bold text-slate-900 mb-2">Coursera</h2>
-                <ul className="space-y-1 text-xs">
+                <h2 className="text-sm font-bold text-slate-900 mb-3">Coursera</h2>
+                <ul className="space-y-2 text-sm">
                   {[
                     ["About", "/about"],
                     ["What We Offer", "/about/how-coursera-works/"],
@@ -1591,8 +1591,8 @@ export default function HomePage() {
               </div>
               {/* Community */}
               <div>
-                <h2 className="text-[13px] font-bold text-slate-900 mb-2">Community</h2>
-                <ul className="space-y-1 text-xs">
+                <h2 className="text-sm font-bold text-slate-900 mb-3">Community</h2>
+                <ul className="space-y-2 text-sm">
                   {[
                     ["Learners", "#"],
                     ["Partners", "#"],
@@ -1607,8 +1607,8 @@ export default function HomePage() {
               </div>
               {/* More */}
               <div>
-                <h2 className="text-[13px] font-bold text-slate-900 mb-2">More</h2>
-                <ul className="space-y-1 text-xs">
+                <h2 className="text-sm font-bold text-slate-900 mb-3">More</h2>
+                <ul className="space-y-2 text-sm">
                   {[
                     ["Press", "#"],
                     ["Investors", "#"],
