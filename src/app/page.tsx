@@ -408,13 +408,13 @@ const testimonials = [
     name: "Sarah W.",
     image: "/images/testimonials/sarah-w.jpg",
     quote:
-      "Coursera\u2019s reputation for high-quality content, paired with its flexible structure, made it possible for me to dive into data analytics while managing family, health, and everyday life.",
+      "CourseHub\u2019s reputation for high-quality content, paired with its flexible structure, made it possible for me to dive into data analytics while managing family, health, and everyday life.",
   },
   {
     name: "Noeris B.",
     image: "/images/testimonials/noeris-b.jpg",
     quote:
-      "Coursera rebuilt my confidence and showed me I could dream bigger. It wasn\u2019t just about gaining knowledge\u2014it was about believing in my potential again.",
+      "CourseHub rebuilt my confidence and showed me I could dream bigger. It wasn\u2019t just about gaining knowledge\u2014it was about believing in my potential again.",
   },
   {
     name: "Abdullahi M.",
@@ -426,17 +426,17 @@ const testimonials = [
     name: "Anas A.",
     image: "/images/testimonials/anas-a.jpg",
     quote:
-      "Learning with Coursera has expanded my professional expertise by giving me access to cutting-edge research, practical tools, and global perspectives.",
+      "Learning with CourseHub has expanded my professional expertise by giving me access to cutting-edge research, practical tools, and global perspectives.",
   },
 ];
 
 const faqItems: { question: string; answer: React.ReactNode }[] = [
   {
     question:
-      "Is Coursera accredited, and are Coursera certificates recognized by employers?",
+      "Is CourseHub accredited, and are CourseHub certificates recognized by employers?",
     answer: (
       <p>
-        Coursera partners with accredited universities and leading companies such
+        CourseHub partners with accredited universities and leading companies such
         as Google and IBM to offer courses, Specializations, and Professional
         Certificates. Employers widely recognize these credentials because they
         are issued directly by trusted institutions. Learners can build job-ready
@@ -461,10 +461,10 @@ const faqItems: { question: string; answer: React.ReactNode }[] = [
     ),
   },
   {
-    question: "Is a Coursera certificate worth it?",
+    question: "Is a CourseHub certificate worth it?",
     answer: (
       <p>
-        For many learners, a Coursera certificate is worth it because it provides
+        For many learners, a CourseHub certificate is worth it because it provides
         job-ready skills and a verifiable credential from respected universities
         and companies. Learners commonly transition into roles in project
         management, UX design, and data science through programs such as the{" "}
@@ -492,15 +492,15 @@ const faqItems: { question: string; answer: React.ReactNode }[] = [
     ),
   },
   {
-    question: "What is Coursera Plus, and is it worth it?",
+    question: "What is CourseHub Plus, and is it worth it?",
     answer: (
       <p>
-        Coursera Plus is an annual subscription that gives learners unlimited
+        CourseHub Plus is an annual subscription that gives learners unlimited
         access to thousands of courses, Specializations, and Professional
         Certificates. It&apos;s a substantial value for anyone planning to
         complete multiple programs in a year. Learners often use{" "}
         <Link href="/courseraplus" className="text-[#0056d2] underline">
-          Coursera Plus
+          CourseHub Plus
         </Link>{" "}
         to explore in-demand areas, such as AI and analytics, through programs
         like the{" "}
@@ -520,15 +520,15 @@ const faqItems: { question: string; answer: React.ReactNode }[] = [
     ),
   },
   {
-    question: "Does Coursera offer free online courses?",
+    question: "Does CourseHub offer free online courses?",
     answer: (
       <p>
-        Yes. Coursera offers thousands of courses that you can preview for free,
+        Yes. CourseHub offers thousands of courses that you can preview for free,
         including access to the first module, allowing you to explore the content
         before committing. Learners who want full course access or a certificate
         can join with a 7-day free trial through{" "}
         <Link href="/courseraplus" className="text-[#0056d2] underline">
-          Coursera Plus
+          CourseHub Plus
         </Link>{" "}
         or a subscription-based program. Many learners begin with introductory
         topics, such as{" "}
@@ -552,10 +552,10 @@ const faqItems: { question: string; answer: React.ReactNode }[] = [
     ),
   },
   {
-    question: "What are the most popular courses on Coursera?",
+    question: "What are the most popular courses on CourseHub?",
     answer: (
       <p>
-        Coursera&apos;s best-known courses and certificates are offered by
+        CourseHub&apos;s best-known courses and certificates are offered by
         leading universities and companies in the fields of AI, data science,
         cybersecurity, and software engineering. Many learners begin with the{" "}
         <Link href="/specializations/machine-learning-introduction" className="text-[#0056d2] underline">
@@ -591,11 +591,11 @@ const faqItems: { question: string; answer: React.ReactNode }[] = [
   },
   {
     question:
-      "How can Coursera help me get a job or advance my career?",
+      "How can CourseHub help me get a job or advance my career?",
     answer: (
       <div>
         <p>
-          Coursera offers job-aligned Professional Certificates and
+          CourseHub offers job-aligned Professional Certificates and
           Specializations designed in collaboration with employers and
           universities to help learners qualify for roles in fields such as
           cybersecurity, UX, data analytics, AI, and business. Programs such as
@@ -623,7 +623,7 @@ const faqItems: { question: string; answer: React.ReactNode }[] = [
           as pathways into business and technology roles.
         </p>
         <p className="mt-3">
-          Coursera also offers online bachelor&apos;s and master&apos;s degrees
+          CourseHub also offers online bachelor&apos;s and master&apos;s degrees
           from accredited universities, which can support long-term career
           advancement in business, computer science, data, and other high-growth
           fields. Learners exploring formal education pathways can browse{" "}
@@ -641,21 +641,21 @@ const faqItems: { question: string; answer: React.ReactNode }[] = [
   },
   {
     question:
-      "What is Coursera for Business, and how much does it cost?",
+      "What is CourseHub for Business, and how much does it cost?",
     answer: (
       <div>
         <p>
           <Link href="/business" className="text-[#0056d2] underline">
-            Coursera for Business
+            CourseHub for Business
           </Link>{" "}
-          is Coursera&apos;s enterprise learning platform designed to help
+          is CourseHub&apos;s enterprise learning platform designed to help
           organizations reskill and upskill employees with job-relevant training
           from top universities and companies. It comes in two versions:
         </p>
         <ul className="list-disc pl-5 mt-2 space-y-1.5">
           <li>
             <Link href="/business/teams" className="text-[#0056d2] underline">
-              Coursera for Teams
+              CourseHub for Teams
             </Link>{" "}
             – Designed for small teams and growing businesses. It offers access
             to thousands of courses and Professional Certificates for a fixed
@@ -663,7 +663,7 @@ const faqItems: { question: string; answer: React.ReactNode }[] = [
           </li>
           <li>
             <Link href="/enterprise" className="text-[#0056d2] underline">
-              Coursera for Enterprise
+              CourseHub for Enterprise
             </Link>{" "}
             – Built for large organizations that need advanced features,
             including analytics, integrations, skills benchmarking, and scalable
@@ -672,8 +672,8 @@ const faqItems: { question: string; answer: React.ReactNode }[] = [
         </ul>
         <p className="mt-3">
           Pricing varies depending on the size of your team and the learning
-          needs of your organization. Small businesses can purchase Coursera for
-          Teams directly online, while Coursera for Enterprise pricing is custom
+          needs of your organization. Small businesses can purchase CourseHub for
+          Teams directly online, while CourseHub for Enterprise pricing is custom
           and available through a sales consultation.
         </p>
       </div>
@@ -1144,7 +1144,7 @@ export default function HomePage() {
             <div className="rounded-2xl bg-[#E8F0FE] px-6 py-5 sm:px-8 sm:py-6">
               <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6">
                 <h2 className="text-lg font-bold text-slate-900 whitespace-nowrap flex-shrink-0">
-                  What brings you to Coursera today?
+                  What brings you to CourseHub today?
                 </h2>
                 <div className="flex flex-wrap lg:flex-nowrap gap-2">
                   {learningGoals.map((goal) => (
@@ -1326,7 +1326,7 @@ export default function HomePage() {
           {/* ------------------------------------------------------ */}
           <section className="mb-8 mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {/* Coursera Plus Card */}
+              {/* CourseHub Plus Card */}
               <Link
                 href="/courseraplus"
                 className="group relative flex rounded-2xl overflow-hidden min-h-[200px] border border-blue-200"
@@ -1336,7 +1336,7 @@ export default function HomePage() {
                   <div>
                     <img
                       src="/images/promo/coursera-plus-logo.png"
-                      alt="Coursera Plus"
+                      alt="CourseHub Plus"
                       className="h-6 mb-3"
                       height={24}
                     />
@@ -1360,7 +1360,7 @@ export default function HomePage() {
                 </div>
               </Link>
 
-              {/* Coursera for Business Card */}
+              {/* CourseHub for Business Card */}
               <Link
                 href="/business"
                 className="group relative flex rounded-2xl overflow-hidden min-h-[200px] border border-slate-300"
@@ -1370,7 +1370,7 @@ export default function HomePage() {
                   <div>
                     <img
                       src="/images/promo/coursera-business-logo.png"
-                      alt="Coursera for Business"
+                      alt="CourseHub for Business"
                       className="h-5 mb-3"
                       height={20}
                     />
@@ -1379,7 +1379,7 @@ export default function HomePage() {
                     </h3>
                   </div>
                   <span className="inline-flex items-center gap-1.5 mt-4 text-sm font-semibold text-white group-hover:underline">
-                    Try Coursera for Business
+                    Try CourseHub for Business
                     <svg aria-hidden="true" fill="none" focusable="false" height="20" viewBox="0 0 20 20" width="20">
                       <path d="M13.125 10.75H4.75a.728.728 0 01-.535-.214.72.72 0 01-.215-.532c0-.21.072-.39.215-.535a.72.72 0 01.535-.219h8.375L9.454 5.579a.721.721 0 01-.225-.527c0-.201.077-.382.23-.541a.745.745 0 011.058.006l4.954 4.96a.722.722 0 01.216.526.76.76 0 01-.052.282.692.692 0 01-.156.236l-4.958 4.958a.681.681 0 01-.521.219.776.776 0 01-.52-.23.766.766 0 01-.23-.544.71.71 0 01.23-.528l3.645-3.646z" fill="currentColor" />
                     </svg>
@@ -1401,7 +1401,7 @@ export default function HomePage() {
           {/* ------------------------------------------------------ */}
           <section className="mb-8 mx-auto">
             <h2 className="text-xl font-semibold text-slate-900 mb-4">
-              Why people choose Coursera
+              Why people choose CourseHub
             </h2>
             <div className="overflow-x-auto scrollbar-hide">
               <div className="flex gap-4 min-w-[min-content] lg:grid lg:grid-cols-4 lg:min-w-0">
@@ -1558,9 +1558,9 @@ export default function HomePage() {
         <div>
           <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 pt-16 pb-10">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-              {/* Coursera */}
+              {/* CourseHub */}
               <div>
-                <h2 className="text-sm font-bold text-slate-900 mb-1">Coursera</h2>
+                <h2 className="text-sm font-bold text-slate-900 mb-1">CourseHub</h2>
                 <ul className="space-y-3 text-sm">
                   {[
                     ["About", "/about"],
@@ -1568,7 +1568,7 @@ export default function HomePage() {
                     ["Leadership", "/about/leadership"],
                     ["Careers", "#"],
                     ["Catalog", "/browse"],
-                    ["Coursera Plus", "/courseraplus"],
+                    ["CourseHub Plus", "/courseraplus"],
                     ["Professional Certificates", "/professional-certificate"],
                     ["MasterTrack\u00AE Certificates", "/mastertrack"],
                     ["Degrees", "/degrees"],
@@ -1578,7 +1578,7 @@ export default function HomePage() {
                     ["Become a Partner", "#"],
                     ["Social Impact", "#"],
                     ["Free Courses", "#"],
-                    ["Share your Coursera learning story", "#"],
+                    ["Share your CourseHub learning story", "#"],
                   ].map(([label, href]) => (
                     <li key={label}><Link href={href} className="text-slate-600 hover:text-slate-900 hover:underline transition-colors">{label}</Link></li>
                   ))}
@@ -1593,7 +1593,7 @@ export default function HomePage() {
                     ["Partners", "#"],
                     ["Beta Testers", "#"],
                     ["Blog", "#"],
-                    ["The Coursera Podcast", "#"],
+                    ["The CourseHub Podcast", "#"],
                     ["Tech Blog", "#"],
                   ].map(([label, href]) => (
                     <li key={label}><Link href={href} className="text-slate-600 hover:text-slate-900 hover:underline transition-colors">{label}</Link></li>
@@ -1659,7 +1659,7 @@ export default function HomePage() {
         {/* Bottom Bar */}
         <div className="border-t border-slate-200">
           <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-14 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p className="text-sm text-slate-500">&copy; 2026 Coursera Inc. All rights reserved.</p>
+            <p className="text-sm text-slate-500">&copy; 2026 CourseHub Inc. All rights reserved.</p>
             <div className="flex items-center gap-4">
               {/* Facebook */}
               <Link href="#" aria-label="Facebook" className="text-slate-700 hover:text-slate-900 transition-colors">
