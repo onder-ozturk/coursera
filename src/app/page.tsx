@@ -1628,7 +1628,7 @@ export default function HomePage() {
                 </ul>
               </div>
               {/* App Badges & B Corp */}
-              <div className="flex flex-col items-start lg:items-end gap-4">
+              <div className="flex flex-col items-start gap-4">
                 <Link href="#" className="inline-block rounded-lg overflow-hidden border border-slate-300">
                   <div className="bg-black text-white flex items-center gap-2 px-4 py-2">
                     <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
