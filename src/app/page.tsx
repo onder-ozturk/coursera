@@ -1562,7 +1562,7 @@ export default function HomePage() {
         {/* Main Footer Section */}
         <div className="border-t border-slate-200">
           <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-10">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {/* Coursera */}
               <div>
                 <h2 className="text-sm font-bold text-slate-900 mb-3">Coursera</h2>
@@ -1628,7 +1628,7 @@ export default function HomePage() {
                 </ul>
               </div>
               {/* App Badges & B Corp */}
-              <div className="lg:col-span-2 flex flex-col items-start lg:items-end gap-4">
+              <div className="flex flex-col items-start lg:items-end gap-4">
                 <Link href="#" className="inline-block rounded-lg overflow-hidden border border-slate-300">
                   <div className="bg-black text-white flex items-center gap-2 px-4 py-2">
                     <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
