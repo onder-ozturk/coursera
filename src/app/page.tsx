@@ -1469,6 +1469,232 @@ export default function HomePage() {
         </div>
       </main>
 
+      {/* ---------------------------------------------------------- */}
+      {/* 10. FOOTER                                                   */}
+      {/* ---------------------------------------------------------- */}
+      <footer className="bg-white border-t border-slate-200" role="contentinfo">
+        {/* SEO Links Section */}
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Skills */}
+            <div>
+              <h2 className="text-sm font-bold text-slate-900 mb-3">Skills</h2>
+              <ul className="space-y-2 text-sm">
+                {[
+                  ["Artificial Intelligence (AI)", "/courses?query=artificial+intelligence"],
+                  ["Cybersecurity", "/courses?query=cybersecurity"],
+                  ["Data Analytics", "/courses?query=data+analytics"],
+                  ["Digital Marketing", "/courses?query=digital+marketing"],
+                  ["English Speaking", "/courses?query=english+speaking"],
+                  ["Generative AI (GenAI)", "/courses?query=generative+ai"],
+                  ["Microsoft Excel", "/courses?query=microsoft+excel"],
+                  ["Microsoft Power BI", "/courses?query=microsoft+power+bi"],
+                  ["Project Management", "/courses?query=project+management"],
+                  ["Python", "/courses?query=python"],
+                ].map(([label, href]) => (
+                  <li key={label}><Link href={href} className="text-slate-600 hover:text-slate-900 hover:underline transition-colors">{label}</Link></li>
+                ))}
+              </ul>
+            </div>
+            {/* Certificates & Programs */}
+            <div>
+              <h2 className="text-sm font-bold text-slate-900 mb-3">Certificates &amp; Programs</h2>
+              <ul className="space-y-2 text-sm">
+                {[
+                  ["Google Cybersecurity Certificate", "/professional-certificates/google-cybersecurity"],
+                  ["Google Data Analytics Certificate", "/professional-certificates/google-data-analytics"],
+                  ["Google IT Support Certificate", "/professional-certificates/google-it-support"],
+                  ["Google Project Management Certificate", "/professional-certificates/google-project-management"],
+                  ["Google UX Design Certificate", "/professional-certificates/google-ux-design"],
+                  ["IBM Data Analyst Certificate", "/professional-certificates/ibm-data-analyst"],
+                  ["IBM Data Science Certificate", "/professional-certificates/ibm-data-science"],
+                  ["Machine Learning Certificate", "/specializations/machine-learning-introduction"],
+                  ["Microsoft Power BI Data Analyst Certificate", "/professional-certificates/microsoft-power-bi-data-analyst"],
+                  ["UI / UX Design Certificate", "/specializations/ui-ux-design"],
+                ].map(([label, href]) => (
+                  <li key={label}><Link href={href} className="text-slate-600 hover:text-slate-900 hover:underline transition-colors">{label}</Link></li>
+                ))}
+              </ul>
+            </div>
+            {/* Industries & Careers */}
+            <div>
+              <h2 className="text-sm font-bold text-slate-900 mb-3">Industries &amp; Careers</h2>
+              <ul className="space-y-2 text-sm">
+                {[
+                  ["Business", "/courses?query=business&topic=Business"],
+                  ["Computer Science", "/courses?query=computer+science&topic=Computer+Science"],
+                  ["Data Science", "/courses?query=data+science&topic=Data+Science"],
+                  ["Education & Teaching", "/courses?query=education&topic=Social+Sciences"],
+                  ["Engineering", "/courses?query=engineering"],
+                  ["Finance", "/courses?query=finance&skills=Finance"],
+                  ["Healthcare", "/courses?query=healthcare"],
+                  ["Human Resources (HR)", "/courses?query=hr"],
+                  ["Information Technology (IT)", "/courses?query=it"],
+                  ["Marketing", "/courses?query=marketing&skills=Marketing"],
+                ].map(([label, href]) => (
+                  <li key={label}><Link href={href} className="text-slate-600 hover:text-slate-900 hover:underline transition-colors">{label}</Link></li>
+                ))}
+              </ul>
+            </div>
+            {/* Career Resources */}
+            <div>
+              <h2 className="text-sm font-bold text-slate-900 mb-3">Career Resources</h2>
+              <ul className="space-y-2 text-sm">
+                {[
+                  ["Career Aptitude Test", "/resources/career-quiz"],
+                  ["Examples of Strengths and Weaknesses for Job Interviews", "/articles/strengths-and-weaknesses-interview"],
+                  ["High-Income Skills to Learn", "/articles/high-income-skills"],
+                  ["How Does Cryptocurrency Work?", "/articles/how-does-cryptocurrency-work"],
+                  ["How to Highlight Duplicates in Google Sheets", "/articles/tutorial-highlight-duplicates-google-sheets"],
+                  ["How to Learn Artificial Intelligence", "/articles/how-to-learn-artificial-intelligence"],
+                  ["Popular Cybersecurity Certifications", "/articles/popular-cybersecurity-certifications"],
+                  ["Preparing for the PMP Certification", "/articles/the-pmp-certification-a-guide-to-getting-started"],
+                  ["Signs You Will Get the Job After an Interview", "/articles/signs-you-will-get-the-job-after-interview"],
+                  ["What Is Artificial Intelligence?", "/articles/what-is-artificial-intelligence"],
+                ].map(([label, href]) => (
+                  <li key={label}><Link href={href} className="text-slate-600 hover:text-slate-900 hover:underline transition-colors">{label}</Link></li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Main Footer Section */}
+        <div className="border-t border-slate-200">
+          <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+              {/* Coursera */}
+              <div>
+                <h2 className="text-sm font-bold text-slate-900 mb-3">Coursera</h2>
+                <ul className="space-y-2 text-sm">
+                  {[
+                    ["About", "/about"],
+                    ["What We Offer", "/about/how-coursera-works/"],
+                    ["Leadership", "/about/leadership"],
+                    ["Careers", "#"],
+                    ["Catalog", "/browse"],
+                    ["Coursera Plus", "/courseraplus"],
+                    ["Professional Certificates", "/professional-certificate"],
+                    ["MasterTrack\u00AE Certificates", "/mastertrack"],
+                    ["Degrees", "/degrees"],
+                    ["For Enterprise", "/business"],
+                    ["For Government", "/government"],
+                    ["For Campus", "/campus"],
+                    ["Become a Partner", "#"],
+                    ["Social Impact", "#"],
+                    ["Free Courses", "#"],
+                    ["Share your Coursera learning story", "#"],
+                  ].map(([label, href]) => (
+                    <li key={label}><Link href={href} className="text-slate-600 hover:text-slate-900 hover:underline transition-colors">{label}</Link></li>
+                  ))}
+                </ul>
+              </div>
+              {/* Community */}
+              <div>
+                <h2 className="text-sm font-bold text-slate-900 mb-3">Community</h2>
+                <ul className="space-y-2 text-sm">
+                  {[
+                    ["Learners", "#"],
+                    ["Partners", "#"],
+                    ["Beta Testers", "#"],
+                    ["Blog", "#"],
+                    ["The Coursera Podcast", "#"],
+                    ["Tech Blog", "#"],
+                  ].map(([label, href]) => (
+                    <li key={label}><Link href={href} className="text-slate-600 hover:text-slate-900 hover:underline transition-colors">{label}</Link></li>
+                  ))}
+                </ul>
+              </div>
+              {/* More */}
+              <div>
+                <h2 className="text-sm font-bold text-slate-900 mb-3">More</h2>
+                <ul className="space-y-2 text-sm">
+                  {[
+                    ["Press", "#"],
+                    ["Investors", "#"],
+                    ["Terms", "#"],
+                    ["Privacy", "#"],
+                    ["Help", "#"],
+                    ["Accessibility", "#"],
+                    ["Contact", "#"],
+                    ["Articles", "#"],
+                    ["Directory", "#"],
+                    ["Affiliates", "#"],
+                    ["Modern Slavery Statement", "#"],
+                    ["Cookies Preference Center", "#"],
+                  ].map(([label, href]) => (
+                    <li key={label}><Link href={href} className="text-slate-600 hover:text-slate-900 hover:underline transition-colors">{label}</Link></li>
+                  ))}
+                </ul>
+              </div>
+              {/* App Badges & B Corp */}
+              <div className="lg:col-span-2 flex flex-col items-start lg:items-end gap-4">
+                <Link href="#" className="inline-block rounded-lg overflow-hidden border border-slate-300">
+                  <div className="bg-black text-white flex items-center gap-2 px-4 py-2">
+                    <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                      <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+                    </svg>
+                    <div className="leading-tight">
+                      <div className="text-[10px]">Download on the</div>
+                      <div className="text-base font-semibold -mt-0.5">App Store</div>
+                    </div>
+                  </div>
+                </Link>
+                <Link href="#" className="inline-block rounded-lg overflow-hidden border border-slate-300">
+                  <div className="bg-black text-white flex items-center gap-2 px-4 py-2">
+                    <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                      <path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.24-.84-.76-.84-1.35m13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27m3.35-4.31c.34.27.56.69.56 1.19s-.22.92-.57 1.19l-1.97 1.13-2.5-2.5 2.5-2.5 1.98 1.49M6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z" />
+                    </svg>
+                    <div className="leading-tight">
+                      <div className="text-[10px]">GET IT ON</div>
+                      <div className="text-base font-semibold -mt-0.5">Google Play</div>
+                    </div>
+                  </div>
+                </Link>
+                <div className="mt-4 flex flex-col items-center">
+                  <div className="w-16 h-16 rounded-full border-2 border-slate-900 flex items-center justify-center">
+                    <span className="text-xs font-bold text-slate-900 text-center leading-tight">Certified<br />B<br />Corp</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="border-t border-slate-200">
+          <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p className="text-sm text-slate-500">&copy; 2026 Coursera Inc. All rights reserved.</p>
+            <div className="flex items-center gap-4">
+              {/* Facebook */}
+              <Link href="#" aria-label="Facebook" className="text-slate-700 hover:text-slate-900 transition-colors">
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" /></svg>
+              </Link>
+              {/* LinkedIn */}
+              <Link href="#" aria-label="LinkedIn" className="text-slate-700 hover:text-slate-900 transition-colors">
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" /></svg>
+              </Link>
+              {/* Twitter/X */}
+              <Link href="#" aria-label="Twitter" className="text-slate-700 hover:text-slate-900 transition-colors">
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" /></svg>
+              </Link>
+              {/* YouTube */}
+              <Link href="#" aria-label="YouTube" className="text-slate-700 hover:text-slate-900 transition-colors">
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" /></svg>
+              </Link>
+              {/* Instagram */}
+              <Link href="#" aria-label="Instagram" className="text-slate-700 hover:text-slate-900 transition-colors">
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 100 12.324 6.162 6.162 0 100-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 11-2.882 0 1.441 1.441 0 012.882 0z" /></svg>
+              </Link>
+              {/* TikTok */}
+              <Link href="#" aria-label="TikTok" className="text-slate-700 hover:text-slate-900 transition-colors">
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" /></svg>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </footer>
+
     </div>
   );
 }
