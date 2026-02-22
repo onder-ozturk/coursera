@@ -266,6 +266,7 @@ const certificationCourses = [
   {
     title: "PMP Certification",
     provider: "Pearson",
+    providerLogo: "/partners/pearson.png",
     type: "Specialization",
     rating: 4.8,
     image: "/courses/pmp-certification.jpg",
@@ -274,6 +275,7 @@ const certificationCourses = [
   {
     title: "CompTIA Security+ Certification Preparation",
     provider: "LearnKartS",
+    providerLogo: "/partners/learnkarts.png",
     type: "Specialization",
     rating: 4.6,
     image: "/courses/comptia-security.png",
@@ -282,6 +284,7 @@ const certificationCourses = [
   {
     title: "CISSP Certified Information Systems Security Professional",
     provider: "Packt",
+    providerLogo: "/partners/packt.png",
     type: "Specialization",
     rating: 4.8,
     image: "/courses/cissp.jpg",
@@ -290,6 +293,7 @@ const certificationCourses = [
   {
     title: "AWS Cloud Solutions Architect",
     provider: "Amazon Web Services",
+    providerLogo: "/partners/aws.png",
     type: "Professional Certificate",
     rating: 4.8,
     image: "/courses/aws-cloud-architect.png",
@@ -952,47 +956,92 @@ export default function HomePage() {
           {/* 9c. CERTIFICATION EXAM PREP                              */}
           {/* ------------------------------------------------------ */}
           <section className="mb-8 mx-auto">
-            <div className="flex items-center gap-4 mb-4">
-              <h2 className="text-xl font-semibold text-slate-900">
-                Prepare for an industry certification exam
-              </h2>
-              <Link
-                href="/explore/certification-preparation-courses"
-                className="inline-flex items-center gap-1 text-[#0056d2] font-semibold text-sm hover:underline"
-              >
-                Explore courses
-                <svg aria-hidden="true" fill="none" focusable="false" height="16" viewBox="0 0 20 20" width="16" className="text-[#0056d2]">
-                  <path d="M13.125 10.75H4.75a.728.728 0 01-.535-.214.72.72 0 01-.215-.532c0-.21.072-.39.215-.535a.72.72 0 01.535-.219h8.375L9.454 5.579a.721.721 0 01-.225-.527c0-.201.077-.382.23-.541a.745.745 0 011.058.006l4.954 4.96a.722.722 0 01.216.526.76.76 0 01-.052.282.692.692 0 01-.156.236l-4.958 4.958a.681.681 0 01-.521.219.776.776 0 01-.52-.23.766.766 0 01-.23-.544.71.71 0 01.23-.528l3.645-3.646z" fill="currentColor" />
-                </svg>
-              </Link>
-            </div>
-            <div className="overflow-x-auto scrollbar-hide">
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 min-w-[min-content] md:min-w-0">
-                {certificationCourses.map((course) => (
+            <div
+              className="rounded-2xl overflow-hidden p-3 sm:p-4"
+              style={{
+                background: "linear-gradient(105deg, #1F2937 0%, #374151 40%, #4B5563 70%, #6B7280 100%)",
+              }}
+            >
+              <div className="flex flex-col xl:flex-row xl:items-center xl:gap-6">
+                {/* Title & CTA */}
+                <div className="mb-2.5 xl:mb-0 xl:flex-shrink-0 xl:w-[200px]">
                   <Link
-                    key={course.title}
-                    href={course.href}
-                    className="group block rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-lg transition-shadow min-w-[200px] md:min-w-0"
+                    href="/explore/certification-preparation-courses"
+                    className="inline-flex items-center gap-1.5 hover:underline xl:hidden"
+                    style={{ color: "#ffffff" }}
                   >
-                    <div className="aspect-[16/9] overflow-hidden">
-                      <img
-                        src={course.image}
-                        alt={course.title}
-                        className="w-full h-full object-cover"
-                        width={320}
-                        height={180}
-                      />
-                    </div>
-                    <div className="p-3">
-                      <p className="text-xs text-slate-500 mb-1">{course.provider}</p>
-                      <h3 className="text-sm font-semibold text-slate-900 leading-tight line-clamp-2">
-                        {course.title}
-                      </h3>
-                      <p className="text-xs text-slate-500 mt-1">{course.type}</p>
-                      <Stars rating={course.rating} />
-                    </div>
+                    <h2 className="text-[18px] sm:text-[20px] font-bold leading-snug" style={{ color: "#ffffff" }}>
+                      Prepare for an industry certification exam
+                    </h2>
+                    <svg aria-hidden="true" fill="none" focusable="false" height="20" viewBox="0 0 20 20" width="20" className="flex-shrink-0">
+                      <path d="M13.125 10.75H4.75a.728.728 0 01-.535-.214.72.72 0 01-.215-.532c0-.21.072-.39.215-.535a.72.72 0 01.535-.219h8.375L9.454 5.579a.721.721 0 01-.225-.527c0-.201.077-.382.23-.541a.745.745 0 011.058.006l4.954 4.96a.722.722 0 01.216.526.76.76 0 01-.052.282.692.692 0 01-.156.236l-4.958 4.958a.681.681 0 01-.521.219.776.776 0 01-.52-.23.766.766 0 01-.23-.544.71.71 0 01.23-.528l3.645-3.646z" fill="currentColor" />
+                    </svg>
                   </Link>
-                ))}
+                  <div className="hidden xl:block">
+                    <h2 className="text-[15px] font-bold leading-snug text-white mb-4">
+                      Prepare for an industry certification exam
+                    </h2>
+                    <Link
+                      href="/explore/certification-preparation-courses"
+                      className="inline-flex items-center gap-1.5 rounded-md bg-white px-4 py-2 text-sm font-semibold text-[#1F2937] hover:bg-slate-100 transition-colors"
+                    >
+                      Explore courses
+                      <svg aria-hidden="true" fill="none" focusable="false" height="20" viewBox="0 0 20 20" width="20" className="flex-shrink-0">
+                        <path d="M13.125 10.75H4.75a.728.728 0 01-.535-.214.72.72 0 01-.215-.532c0-.21.072-.39.215-.535a.72.72 0 01.535-.219h8.375L9.454 5.579a.721.721 0 01-.225-.527c0-.201.077-.382.23-.541a.745.745 0 011.058.006l4.954 4.96a.722.722 0 01.216.526.76.76 0 01-.052.282.692.692 0 01-.156.236l-4.958 4.958a.681.681 0 01-.521.219.776.776 0 01-.52-.23.766.766 0 01-.23-.544.71.71 0 01.23-.528l3.645-3.646z" fill="currentColor" />
+                      </svg>
+                    </Link>
+                  </div>
+                </div>
+
+                {/* Card Grid */}
+                <div className="relative flex-1 min-w-0">
+                  <div className="overflow-x-auto scrollbar-hide">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-2.5" role="list">
+                      {certificationCourses.map((course) => (
+                        <Link
+                          key={course.title}
+                          href={course.href}
+                          role="listitem"
+                          className="rounded-xl bg-white overflow-hidden hover:shadow-lg transition-shadow"
+                          style={{ border: "1px solid rgba(0,0,0,0.06)" }}
+                        >
+                          <div className="aspect-[16/9] overflow-hidden">
+                            <img
+                              src={course.image}
+                              alt={course.title}
+                              className="w-full h-full object-cover object-center"
+                              width={320}
+                              height={180}
+                            />
+                          </div>
+                          <div className="p-3">
+                            <div className="flex items-center gap-1.5 mb-1">
+                              <img
+                                src={course.providerLogo}
+                                alt=""
+                                className="h-5 w-5 rounded-full"
+                                style={{ border: "1px solid rgba(0,0,0,0.08)" }}
+                                width={20}
+                                height={20}
+                              />
+                              <span className="text-sm text-[#636363]">{course.provider}</span>
+                            </div>
+                            <h3 className="text-[15px] font-semibold text-[#1f1f1f] leading-snug line-clamp-2">
+                              {course.title}
+                            </h3>
+                            <p className="text-sm text-[#636363] mt-0.5">{course.type}</p>
+                            <div className="flex items-center gap-1 mt-1.5">
+                              <svg aria-hidden="true" fill="none" focusable="false" height="16" viewBox="0 0 20 20" width="16" className="text-[#e8a838]">
+                                <path d="M10 14.063l-3.417 2.041a.747.747 0 01-.833-.042.752.752 0 01-.25-.343.706.706 0 01-.02-.448l.895-3.813-3.02-2.562a.68.68 0 01-.23-.386.887.887 0 01.02-.427.687.687 0 01.23-.343.741.741 0 01.417-.157L7.75 7.23l1.563-3.625A.754.754 0 0110 3.146a.747.747 0 01.688.458L12.25 7.25l3.958.333c.167.014.306.07.417.167a.771.771 0 01.24.77.74.74 0 01-.24.376l-3 2.562.896 3.813a.706.706 0 01-.02.448.752.752 0 01-.25.344.747.747 0 01-.834.041L10 14.063z" fill="currentColor" />
+                              </svg>
+                              <span className="text-sm font-medium text-[#1f1f1f]">{course.rating}</span>
+                            </div>
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
