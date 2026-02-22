@@ -937,7 +937,7 @@ export default function HomePage() {
                   {learningGoals.map((goal) => (
                     <button
                       key={goal.key}
-                      className="flex items-center gap-2 rounded-full bg-white border border-slate-200 pl-1.5 pr-3 py-1.5 text-left hover:shadow-md hover:border-slate-300 transition-all"
+                      className="flex items-center gap-2 rounded-lg bg-white border border-slate-200 pl-1.5 pr-3 py-1.5 text-left hover:shadow-md hover:border-slate-300 transition-all"
                     >
                       <span className="flex-shrink-0 w-10 h-10 rounded-md bg-[#0056D2] flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-white">
