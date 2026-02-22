@@ -924,24 +924,26 @@ export default function HomePage() {
           {/* 9b. WHAT BRINGS YOU TO COURSERA                         */}
           {/* ------------------------------------------------------ */}
           <section className="mb-8 mx-auto">
-            <div className="rounded-2xl bg-[#0056D2] p-6 sm:p-8">
-              <h2 className="text-xl sm:text-2xl font-bold text-white mb-5">
-                What brings you to Coursera today?
-              </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-                {learningGoals.map((goal) => (
-                  <button
-                    key={goal.key}
-                    className="flex items-center gap-3 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 px-4 py-3 text-left transition-colors group"
-                  >
-                    <span className="flex-shrink-0 w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-white">
-                        <path d={goal.icon} fill="currentColor" />
-                      </svg>
-                    </span>
-                    <span className="text-sm font-medium text-white">{goal.label}</span>
-                  </button>
-                ))}
+            <div className="rounded-2xl bg-[#E8F0FE] px-6 py-5 sm:px-8 sm:py-6">
+              <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6">
+                <h2 className="text-lg font-bold text-slate-900 whitespace-nowrap flex-shrink-0">
+                  What brings you to Coursera today?
+                </h2>
+                <div className="flex flex-wrap lg:flex-nowrap gap-3">
+                  {learningGoals.map((goal) => (
+                    <button
+                      key={goal.key}
+                      className="flex items-center gap-2.5 rounded-lg bg-white border border-slate-200 px-4 py-2.5 text-left hover:shadow-md hover:border-slate-300 transition-all"
+                    >
+                      <span className="flex-shrink-0 w-9 h-9 rounded-lg bg-[#0056D2] flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-white">
+                          <path d={goal.icon} fill="currentColor" />
+                        </svg>
+                      </span>
+                      <span className="text-sm font-medium text-slate-900 whitespace-nowrap">{goal.label}</span>
+                    </button>
+                  ))}
+                </div>
               </div>
             </div>
           </section>
