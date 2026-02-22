@@ -1263,66 +1263,61 @@ export default function HomePage() {
           {/* 9d. MOST POPULAR BY CATEGORY                             */}
           {/* ------------------------------------------------------ */}
           <section className="mb-8 mx-auto">
-            <h2 className="text-xl font-semibold text-slate-900 mb-4">
+            <h2 className="text-xl font-semibold text-slate-900 mb-3">
               Most popular by category
             </h2>
-            <div className="overflow-x-auto scrollbar-hide">
-              <div className="flex gap-6 min-w-[min-content] lg:grid lg:grid-cols-3 lg:min-w-0">
-                {popularByCategory.map((cat) => (
-                  <div
-                    key={cat.label}
-                    className="min-w-[340px] lg:min-w-0"
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+              {popularByCategory.map((cat, idx) => (
+                <div
+                  key={cat.label}
+                  className={`rounded-2xl bg-gradient-to-br ${idx === 0 ? "from-blue-50 to-indigo-100" : idx === 1 ? "from-purple-50 to-pink-100" : "from-green-50 to-teal-100"} p-4`}
+                >
+                  <Link
+                    href={cat.href}
+                    className="text-base font-semibold text-slate-900 mb-3 inline-flex items-center gap-1 hover:underline"
                   >
-                    <Link
-                      href={cat.href}
-                      className="inline-flex items-center gap-1 text-[#0056d2] font-semibold text-sm hover:underline transition-colors mb-3"
-                    >
-                      {cat.label}
-                      <svg aria-hidden="true" fill="none" focusable="false" height="16" viewBox="0 0 20 20" width="16" className="flex-shrink-0">
-                        <path d="M13.125 10.75H4.75a.728.728 0 01-.535-.214.72.72 0 01-.215-.532c0-.21.072-.39.215-.535a.72.72 0 01.535-.219h8.375L9.454 5.579a.721.721 0 01-.225-.527c0-.201.077-.382.23-.541a.745.745 0 011.058.006l4.954 4.96a.722.722 0 01.216.526.76.76 0 01-.052.282.692.692 0 01-.156.236l-4.958 4.958a.681.681 0 01-.521.219.776.776 0 01-.52-.23.766.766 0 01-.23-.544.71.71 0 01.23-.528l3.645-3.646z" fill="currentColor" />
-                      </svg>
-                    </Link>
-                    <div className="divide-y divide-slate-200 border border-slate-200 rounded-lg overflow-hidden">
-                      {cat.courses.map((course) => (
-                        <Link
-                          key={course.title}
-                          href={course.href}
-                          className="flex gap-3 p-3 bg-white hover:bg-slate-50 transition-colors"
-                        >
-                          <img
-                            src={course.image}
-                            alt=""
-                            className="h-16 w-20 rounded object-cover flex-shrink-0"
-                            width={80}
-                            height={64}
-                          />
-                          <div className="min-w-0 flex-1">
-                            <div className="flex items-center gap-1.5">
-                              <img
-                                src={course.providerLogo}
-                                alt=""
-                                className="h-5 w-5 rounded-full"
-                                width={20}
-                                height={20}
-                                style={{ border: "1px solid rgba(0,0,0,0.08)" }}
-                              />
-                              <p className="text-xs text-slate-500">{course.provider}</p>
-                            </div>
-                            <h3 className="text-sm font-semibold text-slate-900 leading-tight line-clamp-2 mt-0.5">
-                              {course.title}
-                            </h3>
-                            <div className="flex items-center gap-1.5 mt-1">
-                              <span className="text-xs text-slate-500">{course.type}</span>
-                              <span className="text-xs text-slate-400">&middot;</span>
-                              <Stars rating={course.rating} />
-                            </div>
+                    {cat.label}
+                    <svg aria-hidden="true" fill="none" focusable="false" height="16" viewBox="0 0 20 20" width="16" className="flex-shrink-0">
+                      <path d="M13.125 10.75H4.75a.728.728 0 01-.535-.214.72.72 0 01-.215-.532c0-.21.072-.39.215-.535a.72.72 0 01.535-.219h8.375L9.454 5.579a.721.721 0 01-.225-.527c0-.201.077-.382.23-.541a.745.745 0 011.058.006l4.954 4.96a.722.722 0 01.216.526.76.76 0 01-.052.282.692.692 0 01-.156.236l-4.958 4.958a.681.681 0 01-.521.219.776.776 0 01-.52-.23.766.766 0 01-.23-.544.71.71 0 01.23-.528l3.645-3.646z" fill="currentColor" />
+                    </svg>
+                  </Link>
+                  <div className="space-y-2">
+                    {cat.courses.map((course) => (
+                      <Link
+                        key={course.title}
+                        href={course.href}
+                        className="flex gap-3 p-3 rounded-xl border border-slate-200 bg-white hover:shadow-md transition-shadow"
+                      >
+                        <img
+                          src={course.image}
+                          alt=""
+                          className="h-14 w-14 rounded-lg object-cover flex-shrink-0"
+                          width={56}
+                          height={56}
+                        />
+                        <div className="min-w-0">
+                          <div className="flex items-center gap-1.5">
+                            <img
+                              src={course.providerLogo}
+                              alt=""
+                              className="h-4 w-4 rounded-full"
+                              width={16}
+                              height={16}
+                              style={{ border: "1px solid rgba(0,0,0,0.08)" }}
+                            />
+                            <p className="text-xs text-slate-500">{course.provider}</p>
                           </div>
-                        </Link>
-                      ))}
-                    </div>
+                          <p className="text-sm font-medium text-slate-900 leading-tight line-clamp-2">
+                            {course.title}
+                          </p>
+                          <p className="text-xs text-slate-500 mt-0.5">{course.type}</p>
+                          <Stars rating={course.rating} />
+                        </div>
+                      </Link>
+                    ))}
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           </section>
 
