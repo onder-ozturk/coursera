@@ -1560,8 +1560,8 @@ export default function HomePage() {
         </div>
 
         {/* Main Footer Section */}
-        <div className="border-t border-slate-200">
-          <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-10">
+        <div>
+          <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 pt-16 pb-10">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {/* Coursera */}
               <div>
@@ -1662,7 +1662,7 @@ export default function HomePage() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-slate-200">
+        <div>
           <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-10 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-sm text-slate-500">&copy; 2026 Coursera Inc. All rights reserved.</p>
             <div className="flex items-center gap-4">
