@@ -430,41 +430,254 @@ const testimonials = [
   },
 ];
 
-const faqItems = [
+const faqItems: { question: string; answer: React.ReactNode }[] = [
   {
-    question: "What is Coursera?",
-    answer:
-      "Coursera is a global online learning platform that offers courses, certificates, and degrees from top universities and companies like Google, IBM, Stanford, and more. With over 7,000 courses available, you can learn at your own pace and earn credentials recognized by employers worldwide.",
+    question:
+      "Is Coursera accredited, and are Coursera certificates recognized by employers?",
+    answer: (
+      <p>
+        Coursera partners with accredited universities and leading companies such
+        as Google and IBM to offer courses, Specializations, and Professional
+        Certificates. Employers widely recognize these credentials because they
+        are issued directly by trusted institutions. Learners can build job-ready
+        skills with the{" "}
+        <a href="/professional-certificates/google-data-analytics" className="text-[#0056d2] hover:underline">
+          Google Data Analytics Professional Certificate
+        </a>
+        , the{" "}
+        <a href="/professional-certificates/ibm-data-analyst" className="text-[#0056d2] hover:underline">
+          IBM Data Analyst Professional Certificate
+        </a>
+        , or start with accredited university content in high-demand fields like{" "}
+        <a href="/courses?query=data+analytics" className="text-[#0056d2] hover:underline">
+          data analytics
+        </a>{" "}
+        and{" "}
+        <a href="/courses?query=cybersecurity" className="text-[#0056d2] hover:underline">
+          cybersecurity
+        </a>
+        .
+      </p>
+    ),
   },
   {
-    question: "How much does Coursera cost?",
-    answer:
-      "Many courses on Coursera are free to audit. To earn a certificate, individual courses typically cost $49\u2013$99. Coursera Plus gives you unlimited access to 90%+ of the catalog for $59/month or $399/year. Professional Certificates and Specializations are included with Coursera Plus.",
+    question: "Is a Coursera certificate worth it?",
+    answer: (
+      <p>
+        For many learners, a Coursera certificate is worth it because it provides
+        job-ready skills and a verifiable credential from respected universities
+        and companies. Learners commonly transition into roles in project
+        management, UX design, and data science through programs such as the{" "}
+        <a href="/professional-certificates/google-project-management" className="text-[#0056d2] hover:underline">
+          Google Project Management Professional Certificate
+        </a>
+        , the{" "}
+        <a href="/professional-certificates/google-ux-design" className="text-[#0056d2] hover:underline">
+          Google UX Design Professional Certificate
+        </a>
+        , and the{" "}
+        <a href="/professional-certificates/ibm-data-science" className="text-[#0056d2] hover:underline">
+          IBM Data Science Professional Certificate
+        </a>
+        . Others enter technical fields by starting with beginner-friendly{" "}
+        <a href="/courses?query=python" className="text-[#0056d2] hover:underline">
+          Python
+        </a>{" "}
+        or{" "}
+        <a href="/courses?query=generative+ai" className="text-[#0056d2] hover:underline">
+          generative AI
+        </a>{" "}
+        courses.
+      </p>
+    ),
   },
   {
-    question: "Is it worth getting a Coursera certificate?",
-    answer:
-      "Yes. Coursera certificates are created in partnership with leading companies and universities. Employers recognize these credentials, and 87% of learners report career benefits such as a promotion, raise, or new job after completing a course.",
+    question: "What is Coursera Plus, and is it worth it?",
+    answer: (
+      <p>
+        Coursera Plus is an annual subscription that gives learners unlimited
+        access to thousands of courses, Specializations, and Professional
+        Certificates. It&apos;s a substantial value for anyone planning to
+        complete multiple programs in a year. Learners often use{" "}
+        <a href="/courseraplus" className="text-[#0056d2] hover:underline">
+          Coursera Plus
+        </a>{" "}
+        to explore in-demand areas, such as AI and analytics, through programs
+        like the{" "}
+        <a href="/specializations/ai-essentials-google" className="text-[#0056d2] hover:underline">
+          AI Essentials Specialization
+        </a>
+        , the{" "}
+        <a href="/professional-certificates/ibm-data-analyst" className="text-[#0056d2] hover:underline">
+          IBM Data Analyst Professional Certificate
+        </a>
+        , or the{" "}
+        <a href="/professional-certificates/google-cybersecurity" className="text-[#0056d2] hover:underline">
+          Google Cybersecurity Professional Certificate
+        </a>
+        .
+      </p>
+    ),
   },
   {
-    question: "Can I get a job with a Coursera certificate?",
-    answer:
-      "Absolutely. Google, IBM, Meta, and other top employers have designed Professional Certificates on Coursera specifically to prepare learners for entry-level roles. Many of these programs include direct connections to hiring partners.",
+    question: "Does Coursera offer free online courses?",
+    answer: (
+      <p>
+        Yes. Coursera offers thousands of courses that you can preview for free,
+        including access to the first module, allowing you to explore the content
+        before committing. Learners who want full course access or a certificate
+        can join with a 7-day free trial through{" "}
+        <a href="/courseraplus" className="text-[#0056d2] hover:underline">
+          Coursera Plus
+        </a>{" "}
+        or a subscription-based program. Many learners begin with introductory
+        topics, such as{" "}
+        <a href="/courses?query=python" className="text-[#0056d2] hover:underline">
+          Python
+        </a>
+        ,{" "}
+        <a href="/courses?query=digital+marketing" className="text-[#0056d2] hover:underline">
+          digital marketing
+        </a>
+        , or{" "}
+        <a href="/courses?query=english+speaking" className="text-[#0056d2] hover:underline">
+          English speaking
+        </a>
+        , and later move into job-focused programs, like the{" "}
+        <a href="/professional-certificates/google-it-support" className="text-[#0056d2] hover:underline">
+          Google IT Support Professional Certificate
+        </a>
+        , when they&apos;re ready to complete a credential.
+      </p>
+    ),
   },
   {
-    question: "How long does it take to complete a Coursera course?",
-    answer:
-      "Individual courses typically take 4\u20136 weeks at a pace of 3\u20135 hours per week. Professional Certificates and Specializations may take 3\u20136 months. You can learn at your own pace and set your own schedule.",
+    question: "What are the most popular courses on Coursera?",
+    answer: (
+      <p>
+        Coursera&apos;s best-known courses and certificates are offered by
+        leading universities and companies in the fields of AI, data science,
+        cybersecurity, and software engineering. Many learners begin with the{" "}
+        <a href="/specializations/machine-learning-introduction" className="text-[#0056d2] hover:underline">
+          Machine Learning Specialization
+        </a>{" "}
+        or the{" "}
+        <a href="/specializations/deep-learning" className="text-[#0056d2] hover:underline">
+          Deep Learning Specialization
+        </a>
+        . In contrast, others opt for job-aligned pathways, such as the{" "}
+        <a href="/professional-certificates/google-cybersecurity" className="text-[#0056d2] hover:underline">
+          Google Cybersecurity Professional Certificate
+        </a>{" "}
+        or the{" "}
+        <a href="/professional-certificates/ai-engineer" className="text-[#0056d2] hover:underline">
+          AI Engineer Professional Certificate
+        </a>
+        . You can also browse broad areas, such as{" "}
+        <a href="/courses?query=artificial+intelligence" className="text-[#0056d2] hover:underline">
+          artificial intelligence
+        </a>
+        ,{" "}
+        <a href="/courses?query=sql" className="text-[#0056d2] hover:underline">
+          SQL
+        </a>
+        , or{" "}
+        <a href="/courses?query=web+development" className="text-[#0056d2] hover:underline">
+          web development
+        </a>
+        , to find highly rated options.
+      </p>
+    ),
   },
   {
-    question: "Are Coursera certificates recognized by employers?",
-    answer:
-      "Yes. Coursera partners with over 350 leading universities and companies to create courses. Professional Certificates from Google, IBM, Meta, and others are specifically designed to help you land a job, and many employers actively seek candidates with these credentials.",
+    question:
+      "How can Coursera help me get a job or advance my career?",
+    answer: (
+      <div>
+        <p>
+          Coursera offers job-aligned Professional Certificates and
+          Specializations designed in collaboration with employers and
+          universities to help learners qualify for roles in fields such as
+          cybersecurity, UX, data analytics, AI, and business. Programs such as
+          the{" "}
+          <a href="/professional-certificates/google-cybersecurity" className="text-[#0056d2] hover:underline">
+            Google Cybersecurity Professional Certificate
+          </a>
+          , the{" "}
+          <a href="/specializations/google-data-analysis-with-python" className="text-[#0056d2] hover:underline">
+            Data Analysis with Python Specialization
+          </a>
+          , and the{" "}
+          <a href="/specializations/ui-ux-design" className="text-[#0056d2] hover:underline">
+            UI/UX Design Specialization
+          </a>{" "}
+          help learners build employer-relevant skills. At the same time, many
+          career changers explore areas such as{" "}
+          <a href="/courses?query=product+management" className="text-[#0056d2] hover:underline">
+            product management
+          </a>{" "}
+          or{" "}
+          <a href="/courses?query=business+analysis" className="text-[#0056d2] hover:underline">
+            business analysis
+          </a>{" "}
+          as pathways into business and technology roles.
+        </p>
+        <p className="mt-3">
+          Coursera also offers online bachelor&apos;s and master&apos;s degrees
+          from accredited universities, which can support long-term career
+          advancement in business, computer science, data, and other high-growth
+          fields. Learners exploring formal education pathways can browse{" "}
+          <a href="/degrees" className="text-[#0056d2] hover:underline">
+            online degrees
+          </a>{" "}
+          or view available{" "}
+          <a href="/degrees/bachelors" className="text-[#0056d2] hover:underline">
+            bachelor&apos;s programs
+          </a>{" "}
+          to find a degree aligned to their career goals.
+        </p>
+      </div>
+    ),
   },
   {
-    question: "What is Coursera Plus?",
-    answer:
-      "Coursera Plus is a subscription that gives you unlimited access to over 7,000 courses, Professional Certificates, Specializations, and guided projects. It includes a 7-day free trial and costs $59/month or $399/year.",
+    question:
+      "What is Coursera for Business, and how much does it cost?",
+    answer: (
+      <div>
+        <p>
+          <a href="/business" className="text-[#0056d2] hover:underline">
+            Coursera for Business
+          </a>{" "}
+          is Coursera&apos;s enterprise learning platform designed to help
+          organizations reskill and upskill employees with job-relevant training
+          from top universities and companies. It comes in two versions:
+        </p>
+        <ul className="list-disc pl-5 mt-2 space-y-1.5">
+          <li>
+            <a href="/business/teams" className="text-[#0056d2] hover:underline">
+              Coursera for Teams
+            </a>{" "}
+            – Designed for small teams and growing businesses. It offers access
+            to thousands of courses and Professional Certificates for a fixed
+            price per user.
+          </li>
+          <li>
+            <a href="/enterprise" className="text-[#0056d2] hover:underline">
+              Coursera for Enterprise
+            </a>{" "}
+            – Built for large organizations that need advanced features,
+            including analytics, integrations, skills benchmarking, and scalable
+            workforce training programs tailored to specific roles.
+          </li>
+        </ul>
+        <p className="mt-3">
+          Pricing varies depending on the size of your team and the learning
+          needs of your organization. Small businesses can purchase Coursera for
+          Teams directly online, while Coursera for Enterprise pricing is custom
+          and available through a sales consultation.
+        </p>
+      </div>
+    ),
   },
 ];
 
@@ -1225,26 +1438,27 @@ export default function HomePage() {
           {/* 9g. FREQUENTLY ASKED QUESTIONS                            */}
           {/* ------------------------------------------------------ */}
           <section className="mb-8 mx-auto">
-            <h2 className="text-xl font-semibold text-slate-900 mb-4">
+            <h2 className="text-2xl font-bold text-slate-900 mb-6">
               Frequently asked questions
             </h2>
-            <div className="space-y-0 divide-y divide-slate-200 rounded-xl border border-slate-200 overflow-hidden">
+            <div className="divide-y divide-slate-200">
               {faqItems.map((item) => (
-                <details key={item.question} className="group bg-white">
-                  <summary className="flex items-center justify-between cursor-pointer px-5 py-4 text-sm font-semibold text-slate-900 hover:bg-slate-50 transition-colors">
-                    {item.question}
+                <details key={item.question} className="group" open>
+                  <summary className="flex items-start gap-3 cursor-pointer py-5 text-sm font-semibold text-slate-900 hover:text-slate-700 transition-colors [&::-webkit-details-marker]:hidden list-none">
                     <svg
                       aria-hidden="true"
-                      className="h-5 w-5 flex-shrink-0 text-slate-500 transition-transform group-open:rotate-180"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      focusable="false"
+                      height="24"
+                      viewBox="0 0 20 20"
+                      width="24"
+                      className="flex-shrink-0 mt-0.5 text-slate-700 transition-transform group-open:rotate-180"
                     >
-                      <path d="M19 9l-7 7-7-7" />
+                      <path d="M9.996 12.75a.756.756 0 01-.281-.052.69.69 0 01-.236-.156L5.528 8.59a.705.705 0 01-.226-.538.769.769 0 01.24-.531.729.729 0 011.062 0L10 10.938l3.417-3.417a.693.693 0 01.531-.219.769.769 0 01.531.24.729.729 0 01-.007 1.068l-3.951 3.932a.756.756 0 01-.525.208z" />
                     </svg>
+                    <span>{item.question}</span>
                   </summary>
-                  <div className="px-5 pb-4 text-sm text-slate-600 leading-relaxed">
+                  <div className="pl-10 pb-5 text-sm text-slate-600 leading-relaxed">
                     {item.answer}
                   </div>
                 </details>
