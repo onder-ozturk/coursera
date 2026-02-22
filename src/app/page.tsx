@@ -441,21 +441,21 @@ const faqItems: { question: string; answer: React.ReactNode }[] = [
         Certificates. Employers widely recognize these credentials because they
         are issued directly by trusted institutions. Learners can build job-ready
         skills with the{" "}
-        <a href="/professional-certificates/google-data-analytics" className="text-[#0056d2] hover:underline">
+        <Link href="/professional-certificates/google-data-analytics" className="text-[#0056d2] underline">
           Google Data Analytics Professional Certificate
-        </a>
+        </Link>
         , the{" "}
-        <a href="/professional-certificates/ibm-data-analyst" className="text-[#0056d2] hover:underline">
+        <Link href="/professional-certificates/ibm-data-analyst" className="text-[#0056d2] underline">
           IBM Data Analyst Professional Certificate
-        </a>
+        </Link>
         , or start with accredited university content in high-demand fields like{" "}
-        <a href="/courses?query=data+analytics" className="text-[#0056d2] hover:underline">
+        <Link href="/courses?query=data+analytics" className="text-[#0056d2] underline">
           data analytics
-        </a>{" "}
+        </Link>{" "}
         and{" "}
-        <a href="/courses?query=cybersecurity" className="text-[#0056d2] hover:underline">
+        <Link href="/courses?query=cybersecurity" className="text-[#0056d2] underline">
           cybersecurity
-        </a>
+        </Link>
         .
       </p>
     ),
@@ -468,25 +468,25 @@ const faqItems: { question: string; answer: React.ReactNode }[] = [
         job-ready skills and a verifiable credential from respected universities
         and companies. Learners commonly transition into roles in project
         management, UX design, and data science through programs such as the{" "}
-        <a href="/professional-certificates/google-project-management" className="text-[#0056d2] hover:underline">
+        <Link href="/professional-certificates/google-project-management" className="text-[#0056d2] underline">
           Google Project Management Professional Certificate
-        </a>
+        </Link>
         , the{" "}
-        <a href="/professional-certificates/google-ux-design" className="text-[#0056d2] hover:underline">
+        <Link href="/professional-certificates/google-ux-design" className="text-[#0056d2] underline">
           Google UX Design Professional Certificate
-        </a>
+        </Link>
         , and the{" "}
-        <a href="/professional-certificates/ibm-data-science" className="text-[#0056d2] hover:underline">
+        <Link href="/professional-certificates/ibm-data-science" className="text-[#0056d2] underline">
           IBM Data Science Professional Certificate
-        </a>
+        </Link>
         . Others enter technical fields by starting with beginner-friendly{" "}
-        <a href="/courses?query=python" className="text-[#0056d2] hover:underline">
+        <Link href="/courses?query=python" className="text-[#0056d2] underline">
           Python
-        </a>{" "}
+        </Link>{" "}
         or{" "}
-        <a href="/courses?query=generative+ai" className="text-[#0056d2] hover:underline">
+        <Link href="/courses?query=generative+ai" className="text-[#0056d2] underline">
           generative AI
-        </a>{" "}
+        </Link>{" "}
         courses.
       </p>
     ),
@@ -499,22 +499,22 @@ const faqItems: { question: string; answer: React.ReactNode }[] = [
         access to thousands of courses, Specializations, and Professional
         Certificates. It&apos;s a substantial value for anyone planning to
         complete multiple programs in a year. Learners often use{" "}
-        <a href="/courseraplus" className="text-[#0056d2] hover:underline">
+        <Link href="/courseraplus" className="text-[#0056d2] underline">
           Coursera Plus
-        </a>{" "}
+        </Link>{" "}
         to explore in-demand areas, such as AI and analytics, through programs
         like the{" "}
-        <a href="/specializations/ai-essentials-google" className="text-[#0056d2] hover:underline">
+        <Link href="/specializations/ai-essentials-google" className="text-[#0056d2] underline">
           AI Essentials Specialization
-        </a>
+        </Link>
         , the{" "}
-        <a href="/professional-certificates/ibm-data-analyst" className="text-[#0056d2] hover:underline">
+        <Link href="/professional-certificates/ibm-data-analyst" className="text-[#0056d2] underline">
           IBM Data Analyst Professional Certificate
-        </a>
+        </Link>
         , or the{" "}
-        <a href="/professional-certificates/google-cybersecurity" className="text-[#0056d2] hover:underline">
+        <Link href="/professional-certificates/google-cybersecurity" className="text-[#0056d2] underline">
           Google Cybersecurity Professional Certificate
-        </a>
+        </Link>
         .
       </p>
     ),
@@ -527,26 +527,26 @@ const faqItems: { question: string; answer: React.ReactNode }[] = [
         including access to the first module, allowing you to explore the content
         before committing. Learners who want full course access or a certificate
         can join with a 7-day free trial through{" "}
-        <a href="/courseraplus" className="text-[#0056d2] hover:underline">
+        <Link href="/courseraplus" className="text-[#0056d2] underline">
           Coursera Plus
-        </a>{" "}
+        </Link>{" "}
         or a subscription-based program. Many learners begin with introductory
         topics, such as{" "}
-        <a href="/courses?query=python" className="text-[#0056d2] hover:underline">
+        <Link href="/courses?query=python" className="text-[#0056d2] underline">
           Python
-        </a>
+        </Link>
         ,{" "}
-        <a href="/courses?query=digital+marketing" className="text-[#0056d2] hover:underline">
+        <Link href="/courses?query=digital+marketing" className="text-[#0056d2] underline">
           digital marketing
-        </a>
+        </Link>
         , or{" "}
-        <a href="/courses?query=english+speaking" className="text-[#0056d2] hover:underline">
+        <Link href="/courses?query=english+speaking" className="text-[#0056d2] underline">
           English speaking
-        </a>
+        </Link>
         , and later move into job-focused programs, like the{" "}
-        <a href="/professional-certificates/google-it-support" className="text-[#0056d2] hover:underline">
+        <Link href="/professional-certificates/google-it-support" className="text-[#0056d2] underline">
           Google IT Support Professional Certificate
-        </a>
+        </Link>
         , when they&apos;re ready to complete a credential.
       </p>
     ),
@@ -558,33 +558,33 @@ const faqItems: { question: string; answer: React.ReactNode }[] = [
         Coursera&apos;s best-known courses and certificates are offered by
         leading universities and companies in the fields of AI, data science,
         cybersecurity, and software engineering. Many learners begin with the{" "}
-        <a href="/specializations/machine-learning-introduction" className="text-[#0056d2] hover:underline">
+        <Link href="/specializations/machine-learning-introduction" className="text-[#0056d2] underline">
           Machine Learning Specialization
-        </a>{" "}
+        </Link>{" "}
         or the{" "}
-        <a href="/specializations/deep-learning" className="text-[#0056d2] hover:underline">
+        <Link href="/specializations/deep-learning" className="text-[#0056d2] underline">
           Deep Learning Specialization
-        </a>
+        </Link>
         . In contrast, others opt for job-aligned pathways, such as the{" "}
-        <a href="/professional-certificates/google-cybersecurity" className="text-[#0056d2] hover:underline">
+        <Link href="/professional-certificates/google-cybersecurity" className="text-[#0056d2] underline">
           Google Cybersecurity Professional Certificate
-        </a>{" "}
+        </Link>{" "}
         or the{" "}
-        <a href="/professional-certificates/ai-engineer" className="text-[#0056d2] hover:underline">
+        <Link href="/professional-certificates/ai-engineer" className="text-[#0056d2] underline">
           AI Engineer Professional Certificate
-        </a>
+        </Link>
         . You can also browse broad areas, such as{" "}
-        <a href="/courses?query=artificial+intelligence" className="text-[#0056d2] hover:underline">
+        <Link href="/courses?query=artificial+intelligence" className="text-[#0056d2] underline">
           artificial intelligence
-        </a>
+        </Link>
         ,{" "}
-        <a href="/courses?query=sql" className="text-[#0056d2] hover:underline">
+        <Link href="/courses?query=sql" className="text-[#0056d2] underline">
           SQL
-        </a>
+        </Link>
         , or{" "}
-        <a href="/courses?query=web+development" className="text-[#0056d2] hover:underline">
+        <Link href="/courses?query=web+development" className="text-[#0056d2] underline">
           web development
-        </a>
+        </Link>
         , to find highly rated options.
       </p>
     ),
@@ -600,26 +600,26 @@ const faqItems: { question: string; answer: React.ReactNode }[] = [
           universities to help learners qualify for roles in fields such as
           cybersecurity, UX, data analytics, AI, and business. Programs such as
           the{" "}
-          <a href="/professional-certificates/google-cybersecurity" className="text-[#0056d2] hover:underline">
+          <Link href="/professional-certificates/google-cybersecurity" className="text-[#0056d2] underline">
             Google Cybersecurity Professional Certificate
-          </a>
+          </Link>
           , the{" "}
-          <a href="/specializations/google-data-analysis-with-python" className="text-[#0056d2] hover:underline">
+          <Link href="/specializations/google-data-analysis-with-python" className="text-[#0056d2] underline">
             Data Analysis with Python Specialization
-          </a>
+          </Link>
           , and the{" "}
-          <a href="/specializations/ui-ux-design" className="text-[#0056d2] hover:underline">
+          <Link href="/specializations/ui-ux-design" className="text-[#0056d2] underline">
             UI/UX Design Specialization
-          </a>{" "}
+          </Link>{" "}
           help learners build employer-relevant skills. At the same time, many
           career changers explore areas such as{" "}
-          <a href="/courses?query=product+management" className="text-[#0056d2] hover:underline">
+          <Link href="/courses?query=product+management" className="text-[#0056d2] underline">
             product management
-          </a>{" "}
+          </Link>{" "}
           or{" "}
-          <a href="/courses?query=business+analysis" className="text-[#0056d2] hover:underline">
+          <Link href="/courses?query=business+analysis" className="text-[#0056d2] underline">
             business analysis
-          </a>{" "}
+          </Link>{" "}
           as pathways into business and technology roles.
         </p>
         <p className="mt-3">
@@ -627,13 +627,13 @@ const faqItems: { question: string; answer: React.ReactNode }[] = [
           from accredited universities, which can support long-term career
           advancement in business, computer science, data, and other high-growth
           fields. Learners exploring formal education pathways can browse{" "}
-          <a href="/degrees" className="text-[#0056d2] hover:underline">
+          <Link href="/degrees" className="text-[#0056d2] underline">
             online degrees
-          </a>{" "}
+          </Link>{" "}
           or view available{" "}
-          <a href="/degrees/bachelors" className="text-[#0056d2] hover:underline">
+          <Link href="/degrees/bachelors" className="text-[#0056d2] underline">
             bachelor&apos;s programs
-          </a>{" "}
+          </Link>{" "}
           to find a degree aligned to their career goals.
         </p>
       </div>
@@ -645,26 +645,26 @@ const faqItems: { question: string; answer: React.ReactNode }[] = [
     answer: (
       <div>
         <p>
-          <a href="/business" className="text-[#0056d2] hover:underline">
+          <Link href="/business" className="text-[#0056d2] underline">
             Coursera for Business
-          </a>{" "}
+          </Link>{" "}
           is Coursera&apos;s enterprise learning platform designed to help
           organizations reskill and upskill employees with job-relevant training
           from top universities and companies. It comes in two versions:
         </p>
         <ul className="list-disc pl-5 mt-2 space-y-1.5">
           <li>
-            <a href="/business/teams" className="text-[#0056d2] hover:underline">
+            <Link href="/business/teams" className="text-[#0056d2] underline">
               Coursera for Teams
-            </a>{" "}
+            </Link>{" "}
             – Designed for small teams and growing businesses. It offers access
             to thousands of courses and Professional Certificates for a fixed
             price per user.
           </li>
           <li>
-            <a href="/enterprise" className="text-[#0056d2] hover:underline">
+            <Link href="/enterprise" className="text-[#0056d2] underline">
               Coursera for Enterprise
-            </a>{" "}
+            </Link>{" "}
             – Built for large organizations that need advanced features,
             including analytics, integrations, skills benchmarking, and scalable
             workforce training programs tailored to specific roles.
@@ -1438,27 +1438,27 @@ export default function HomePage() {
           {/* 9g. FREQUENTLY ASKED QUESTIONS                            */}
           {/* ------------------------------------------------------ */}
           <section className="mb-8 mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 mb-6">
+            <h2 className="text-lg font-bold text-slate-900 mb-4">
               Frequently asked questions
             </h2>
             <div className="divide-y divide-slate-200 border-t border-slate-200">
               {faqItems.map((item) => (
                 <details key={item.question} className="group">
-                  <summary className="flex items-center gap-3 cursor-pointer py-3 text-sm font-bold text-slate-900 hover:text-slate-700 transition-colors [&::-webkit-details-marker]:hidden list-none">
+                  <summary className="flex items-center gap-3 cursor-pointer py-3 text-[13px] font-bold text-slate-900 hover:text-slate-700 transition-colors [&::-webkit-details-marker]:hidden list-none">
                     <svg
                       aria-hidden="true"
                       fill="currentColor"
                       focusable="false"
-                      height="20"
+                      height="18"
                       viewBox="0 0 20 20"
-                      width="20"
+                      width="18"
                       className="flex-shrink-0 text-slate-700 transition-transform group-open:rotate-180"
                     >
                       <path d="M9.996 12.75a.756.756 0 01-.281-.052.69.69 0 01-.236-.156L5.528 8.59a.705.705 0 01-.226-.538.769.769 0 01.24-.531.729.729 0 011.062 0L10 10.938l3.417-3.417a.693.693 0 01.531-.219.769.769 0 01.531.24.729.729 0 01-.007 1.068l-3.951 3.932a.756.756 0 01-.525.208z" />
                     </svg>
                     <span>{item.question}</span>
                   </summary>
-                  <div className="pl-8 pb-3 text-sm text-slate-600 leading-relaxed">
+                  <div className="pl-8 pb-3 text-[13px] text-slate-600 leading-relaxed">
                     {item.answer}
                   </div>
                 </details>
