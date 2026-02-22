@@ -1441,24 +1441,24 @@ export default function HomePage() {
             <h2 className="text-2xl font-bold text-slate-900 mb-6">
               Frequently asked questions
             </h2>
-            <div className="divide-y divide-slate-200">
+            <div className="divide-y divide-slate-200 border-t border-slate-200">
               {faqItems.map((item) => (
-                <details key={item.question} className="group" open>
-                  <summary className="flex items-start gap-3 cursor-pointer py-5 text-sm font-semibold text-slate-900 hover:text-slate-700 transition-colors [&::-webkit-details-marker]:hidden list-none">
+                <details key={item.question} className="group">
+                  <summary className="flex items-center gap-3 cursor-pointer py-3 text-sm font-bold text-slate-900 hover:text-slate-700 transition-colors [&::-webkit-details-marker]:hidden list-none">
                     <svg
                       aria-hidden="true"
                       fill="currentColor"
                       focusable="false"
-                      height="24"
+                      height="20"
                       viewBox="0 0 20 20"
-                      width="24"
-                      className="flex-shrink-0 mt-0.5 text-slate-700 transition-transform group-open:rotate-180"
+                      width="20"
+                      className="flex-shrink-0 text-slate-700 transition-transform group-open:rotate-180"
                     >
                       <path d="M9.996 12.75a.756.756 0 01-.281-.052.69.69 0 01-.236-.156L5.528 8.59a.705.705 0 01-.226-.538.769.769 0 01.24-.531.729.729 0 011.062 0L10 10.938l3.417-3.417a.693.693 0 01.531-.219.769.769 0 01.531.24.729.729 0 01-.007 1.068l-3.951 3.932a.756.756 0 01-.525.208z" />
                     </svg>
                     <span>{item.question}</span>
                   </summary>
-                  <div className="pl-10 pb-5 text-sm text-slate-600 leading-relaxed">
+                  <div className="pl-8 pb-3 text-sm text-slate-600 leading-relaxed">
                     {item.answer}
                   </div>
                 </details>
