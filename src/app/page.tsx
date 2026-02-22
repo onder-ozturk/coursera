@@ -1121,19 +1121,21 @@ export default function HomePage() {
               {/* Coursera Plus Card */}
               <Link
                 href="/courseraplus"
-                className="group relative flex flex-col justify-between rounded-2xl overflow-hidden p-6 min-h-[260px]"
-                style={{ background: "linear-gradient(135deg, #0747A6 0%, #0056D2 100%)" }}
+                className="group relative flex rounded-2xl overflow-hidden min-h-[200px] border border-blue-200"
+                style={{ background: "linear-gradient(135deg, #0056D2 0%, #0747A6 50%, #003A8C 100%)" }}
               >
-                <div className="relative z-10">
-                  <img
-                    src="/images/promo/coursera-plus-logo.png"
-                    alt="Coursera Plus"
-                    className="h-6 mb-3"
-                    height={24}
-                  />
-                  <h3 className="text-lg font-bold text-white leading-snug max-w-[260px]">
-                    Unlock access to 10,000+ courses with a subscription
-                  </h3>
+                <div className="relative z-10 flex flex-col justify-between p-6 flex-1 max-w-[60%]">
+                  <div>
+                    <img
+                      src="/images/promo/coursera-plus-logo.png"
+                      alt="Coursera Plus"
+                      className="h-6 mb-3"
+                      height={24}
+                    />
+                    <h3 className="text-lg font-bold text-white leading-snug">
+                      Unlock access to 10,000+ courses with a subscription
+                    </h3>
+                  </div>
                   <span className="inline-flex items-center gap-1.5 mt-4 text-sm font-semibold text-white group-hover:underline">
                     Start 7-day free trial
                     <svg aria-hidden="true" fill="none" focusable="false" height="20" viewBox="0 0 20 20" width="20">
@@ -1141,30 +1143,33 @@ export default function HomePage() {
                     </svg>
                   </span>
                 </div>
-                <img
-                  src="/images/promo/coursera-plus-card.png"
-                  alt=""
-                  className="absolute right-0 bottom-0 h-[200px] w-auto object-contain"
-                  height={200}
-                />
+                <div className="relative w-[40%] flex-shrink-0">
+                  <img
+                    src="/images/promo/coursera-plus-card.png"
+                    alt=""
+                    className="absolute right-0 bottom-0 h-full w-auto object-contain object-right-bottom"
+                  />
+                </div>
               </Link>
 
               {/* Coursera for Business Card */}
               <Link
                 href="/business"
-                className="group relative flex flex-col justify-between rounded-2xl overflow-hidden p-6 min-h-[260px]"
-                style={{ background: "linear-gradient(135deg, #1F2937 0%, #374151 100%)" }}
+                className="group relative flex rounded-2xl overflow-hidden min-h-[200px] border border-slate-300"
+                style={{ background: "linear-gradient(135deg, #0D1B3E 0%, #152244 50%, #1A2A52 100%)" }}
               >
-                <div className="relative z-10">
-                  <img
-                    src="/images/promo/coursera-business-logo.png"
-                    alt="Coursera for Business"
-                    className="h-5 mb-3"
-                    height={20}
-                  />
-                  <h3 className="text-lg font-bold text-white leading-snug max-w-[280px]">
-                    Drive your business forward and empower your teams
-                  </h3>
+                <div className="relative z-10 flex flex-col justify-between p-6 flex-1 max-w-[60%]">
+                  <div>
+                    <img
+                      src="/images/promo/coursera-business-logo.png"
+                      alt="Coursera for Business"
+                      className="h-5 mb-3"
+                      height={20}
+                    />
+                    <h3 className="text-lg font-bold text-white leading-snug">
+                      Drive your business forward and empower your teams
+                    </h3>
+                  </div>
                   <span className="inline-flex items-center gap-1.5 mt-4 text-sm font-semibold text-white group-hover:underline">
                     Try Coursera for Business
                     <svg aria-hidden="true" fill="none" focusable="false" height="20" viewBox="0 0 20 20" width="20">
@@ -1172,12 +1177,13 @@ export default function HomePage() {
                     </svg>
                   </span>
                 </div>
-                <img
-                  src="/images/promo/coursera-business-card.png"
-                  alt=""
-                  className="absolute right-0 bottom-0 h-[200px] w-auto object-contain"
-                  height={200}
-                />
+                <div className="relative w-[40%] flex-shrink-0">
+                  <img
+                    src="/images/promo/coursera-business-card.png"
+                    alt=""
+                    className="absolute right-0 bottom-0 h-full w-auto object-contain object-right-bottom"
+                  />
+                </div>
               </Link>
             </div>
           </section>
