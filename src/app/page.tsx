@@ -420,7 +420,7 @@ export default function HomePage() {
       {/* 6. PARTNERS SECTION                                          */}
       {/* ---------------------------------------------------------- */}
       <section className="bg-white py-5">
-        <div className="max-w-full xl:max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
           <h2 className="text-left text-xl font-semibold text-slate-900 mb-4">
             Learn from 350+ leading universities and companies
           </h2>
