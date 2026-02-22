@@ -239,8 +239,63 @@ const googleCourses = [
   },
 ];
 
+const learningGoals = [
+  {
+    key: "start-career",
+    label: "Start my career",
+    icon: "M20.985 4.417a1.5 1.5 0 00-1.407-1.406c-1.179-.07-4.193.038-6.694 2.538l-.446.451H6.97a1.5 1.5 0 00-1.065.44L2.69 9.656a1.125 1.125 0 00.85 1.896l3.607.504 4.144 4.144.504 3.609a1.125 1.125 0 001.896.849l3.218-3.216a1.5 1.5 0 00.44-1.065V11.56l.447-.447c2.5-2.501 2.608-5.515 2.538-6.695zM12.884 5.549c.72-.725 1.588-1.288 2.543-1.651a8.31 8.31 0 012.998-.387 8.32 8.32 0 01-.387 3c-.363.956-.926 1.824-1.652 2.545L11 15.438 8.56 13l5.324-7.451z",
+  },
+  {
+    key: "change-career",
+    label: "Change my career",
+    icon: "M22.28 16.72a.75.75 0 010 1.06l-2.25 2.25a.75.75 0 11-1.06-1.06l.97-.97h-1.102a5.25 5.25 0 01-4.494-2.526l-3.91-5.475A3.75 3.75 0 007.296 8.5H3a.75.75 0 010-1.5h4.296a5.25 5.25 0 014.494 2.527l3.91 5.475A3.75 3.75 0 0018.838 17h1.101l-.97-.97a.75.75 0 111.061-1.06l2.25 2.25zM13.406 10.032a.75.75 0 001.046-.175l.113-.157A3.75 3.75 0 0117.703 8h1.101l-.97.97a.75.75 0 101.061 1.06l2.25-2.25a.75.75 0 000-1.06l-2.25-2.25a.75.75 0 10-1.06 1.06l.97.97h-1.102a5.25 5.25 0 01-4.494 2.527l-.113.156a.75.75 0 00.175 1.046zM10.594 13.97a.75.75 0 00-1.046.175l-.113.156a3.75 3.75 0 01-3.139 1.699H3a.75.75 0 000 1.5h3.296a5.25 5.25 0 004.494-2.527l.113-.156a.75.75 0 00-.175-1.047z",
+  },
+  {
+    key: "grow-role",
+    label: "Grow in my current role",
+    icon: "M22.5 5.25v6a.75.75 0 01-1.5 0V7.06l-7.72 7.72a.75.75 0 01-1.06 0L9 11.56l-6.22 6.22a.75.75 0 11-1.06-1.06l6.75-6.75a.75.75 0 011.06 0l3.22 3.22L19.94 6H15.75a.75.75 0 010-1.5h6a.75.75 0 01.75.75z",
+  },
+  {
+    key: "explore-topics",
+    label: "Explore topics outside of work",
+    icon: "M22.238 14.237a6.5 6.5 0 01-.22 1.575l-3.9-8.87a.75.75 0 00-.137-.228 3.13 3.13 0 00-4.24.004.75.75 0 00-.24.553V15.75h-3V5.156a.75.75 0 00-.24-.548 3.13 3.13 0 00-4.24-.005.75.75 0 00-.137.228L1.982 13.81a6.51 6.51 0 00-.22 1.576 4.5 4.5 0 109 0V9h3v6.387a4.5 4.5 0 109 0zM7.192 5.6L9 12.399a4.48 4.48 0 00-4.386.069L7.192 5.6zM6 18.75a3 3 0 110-6 3 3 0 010 6zm10.808-13.15l2.578 5.87A4.48 4.48 0 0015 11.398V5.507a2.1 2.1 0 011.808.093zM18 18.75a3 3 0 110-6 3 3 0 010 6z",
+  },
+];
 
-
+const certificationCourses = [
+  {
+    title: "PMP Certification",
+    provider: "Pearson",
+    type: "Specialization",
+    rating: 4.8,
+    image: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/77/686896aa4041ad9e28039a516018a4/CSRA_CVR_44.jpg?auto=format%2Ccompress&dpr=1&w=320&h=180&fit=crop&q=50",
+    href: "/specializations/pearson-pmp-certification",
+  },
+  {
+    title: "CompTIA Security+ Certification Preparation",
+    provider: "LearnKartS",
+    type: "Specialization",
+    rating: 4.6,
+    image: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/98/934fd142dc4d279f60e5520e7f5a6f/compTIA-security-.png?auto=format%2Ccompress&dpr=1&w=320&h=180&fit=crop&q=50",
+    href: "/specializations/comptia-security-plus-certification",
+  },
+  {
+    title: "CISSP Certified Information Systems Security Professional",
+    provider: "Packt",
+    type: "Specialization",
+    rating: 4.8,
+    image: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/ce/d420b9970242d5a64285e3f06280cb/V22337.jpg?auto=format%2Ccompress&dpr=1&w=320&h=180&fit=crop&q=50",
+    href: "/specializations/packt-cissp-certified-information-systems-security-professional-2024",
+  },
+  {
+    title: "AWS Cloud Solutions Architect",
+    provider: "Amazon Web Services",
+    type: "Professional Certificate",
+    rating: 4.8,
+    image: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/f8/0ec136497f4100acb27ca61635c530/V2-AWSCloudSolutionsArchitect-AWS.png?auto=format%2Ccompress&dpr=1&w=320&h=180&fit=crop&q=50",
+    href: "/professional-certificates/aws-cloud-solutions-architect",
+  },
+];
 
 
 
@@ -694,6 +749,81 @@ export default function HomePage() {
                     </Link>
                   );
                 })}
+              </div>
+            </div>
+          </section>
+
+          {/* ------------------------------------------------------ */}
+          {/* 9b. WHAT BRINGS YOU TO COURSERA                         */}
+          {/* ------------------------------------------------------ */}
+          <section className="mb-8 mx-auto">
+            <div className="rounded-2xl bg-[#0056D2] p-6 sm:p-8">
+              <h2 className="text-xl sm:text-2xl font-bold text-white mb-5">
+                What brings you to Coursera today?
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                {learningGoals.map((goal) => (
+                  <button
+                    key={goal.key}
+                    className="flex items-center gap-3 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 px-4 py-3 text-left transition-colors group"
+                  >
+                    <span className="flex-shrink-0 w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-white">
+                        <path d={goal.icon} fill="currentColor" />
+                      </svg>
+                    </span>
+                    <span className="text-sm font-medium text-white">{goal.label}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* ------------------------------------------------------ */}
+          {/* 9c. CERTIFICATION EXAM PREP                              */}
+          {/* ------------------------------------------------------ */}
+          <section className="mb-8 mx-auto">
+            <div className="flex items-center gap-4 mb-4">
+              <h2 className="text-xl font-semibold text-slate-900">
+                Prepare for an industry certification exam
+              </h2>
+              <Link
+                href="/explore/certification-preparation-courses"
+                className="inline-flex items-center gap-1 text-[#0056d2] font-semibold text-sm hover:underline"
+              >
+                Explore courses
+                <svg aria-hidden="true" fill="none" focusable="false" height="16" viewBox="0 0 20 20" width="16" className="text-[#0056d2]">
+                  <path d="M13.125 10.75H4.75a.728.728 0 01-.535-.214.72.72 0 01-.215-.532c0-.21.072-.39.215-.535a.72.72 0 01.535-.219h8.375L9.454 5.579a.721.721 0 01-.225-.527c0-.201.077-.382.23-.541a.745.745 0 011.058.006l4.954 4.96a.722.722 0 01.216.526.76.76 0 01-.052.282.692.692 0 01-.156.236l-4.958 4.958a.681.681 0 01-.521.219.776.776 0 01-.52-.23.766.766 0 01-.23-.544.71.71 0 01.23-.528l3.645-3.646z" fill="currentColor" />
+                </svg>
+              </Link>
+            </div>
+            <div className="overflow-x-auto scrollbar-hide">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 min-w-[min-content] md:min-w-0">
+                {certificationCourses.map((course) => (
+                  <Link
+                    key={course.title}
+                    href={course.href}
+                    className="group block rounded-xl border border-slate-200 bg-white overflow-hidden shadow-sm hover:shadow-lg transition-shadow min-w-[200px] md:min-w-0"
+                  >
+                    <div className="aspect-[16/9] overflow-hidden">
+                      <img
+                        src={course.image}
+                        alt={course.title}
+                        className="w-full h-full object-cover"
+                        width={320}
+                        height={180}
+                      />
+                    </div>
+                    <div className="p-3">
+                      <p className="text-xs text-slate-500 mb-1">{course.provider}</p>
+                      <h3 className="text-sm font-semibold text-slate-900 leading-tight line-clamp-2">
+                        {course.title}
+                      </h3>
+                      <p className="text-xs text-slate-500 mt-1">{course.type}</p>
+                      <Stars rating={course.rating} />
+                    </div>
+                  </Link>
+                ))}
               </div>
             </div>
           </section>
