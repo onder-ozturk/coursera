@@ -929,18 +929,18 @@ export default function HomePage() {
                 <h2 className="text-lg font-bold text-slate-900 whitespace-nowrap flex-shrink-0">
                   What brings you to Coursera today?
                 </h2>
-                <div className="flex flex-wrap lg:flex-nowrap gap-3">
+                <div className="flex flex-wrap lg:flex-nowrap gap-2">
                   {learningGoals.map((goal) => (
                     <button
                       key={goal.key}
-                      className="flex items-center gap-2.5 rounded-lg bg-white border border-slate-200 px-4 py-2.5 text-left hover:shadow-md hover:border-slate-300 transition-all"
+                      className="flex items-center gap-2 rounded-md bg-white border border-slate-200 pl-1.5 pr-3 py-1.5 text-left hover:shadow-md hover:border-slate-300 transition-all"
                     >
-                      <span className="flex-shrink-0 w-9 h-9 rounded-lg bg-[#0056D2] flex items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-white">
+                      <span className="flex-shrink-0 w-7 h-7 rounded-md bg-[#0056D2] flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" className="text-white">
                           <path d={goal.icon} fill="currentColor" />
                         </svg>
                       </span>
-                      <span className="text-sm font-medium text-slate-900 whitespace-nowrap">{goal.label}</span>
+                      <span className="text-[13px] font-medium text-slate-900 whitespace-nowrap">{goal.label}</span>
                     </button>
                   ))}
                 </div>
