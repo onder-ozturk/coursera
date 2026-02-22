@@ -1657,8 +1657,8 @@ export default function HomePage() {
         </div>
 
         {/* Bottom Bar */}
-        <div>
-          <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-10 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="border-t border-slate-200">
+          <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-14 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-sm text-slate-500">&copy; 2026 Coursera Inc. All rights reserved.</p>
             <div className="flex items-center gap-4">
               {/* Facebook */}
