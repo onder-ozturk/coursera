@@ -268,7 +268,7 @@ const certificationCourses = [
     provider: "Pearson",
     type: "Specialization",
     rating: 4.8,
-    image: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/77/686896aa4041ad9e28039a516018a4/CSRA_CVR_44.jpg?auto=format%2Ccompress&dpr=1&w=320&h=180&fit=crop&q=50",
+    image: "/courses/pmp-certification.jpg",
     href: "/specializations/pearson-pmp-certification",
   },
   {
@@ -276,7 +276,7 @@ const certificationCourses = [
     provider: "LearnKartS",
     type: "Specialization",
     rating: 4.6,
-    image: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/98/934fd142dc4d279f60e5520e7f5a6f/compTIA-security-.png?auto=format%2Ccompress&dpr=1&w=320&h=180&fit=crop&q=50",
+    image: "/courses/comptia-security.png",
     href: "/specializations/comptia-security-plus-certification",
   },
   {
@@ -284,7 +284,7 @@ const certificationCourses = [
     provider: "Packt",
     type: "Specialization",
     rating: 4.8,
-    image: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/ce/d420b9970242d5a64285e3f06280cb/V22337.jpg?auto=format%2Ccompress&dpr=1&w=320&h=180&fit=crop&q=50",
+    image: "/courses/cissp.jpg",
     href: "/specializations/packt-cissp-certified-information-systems-security-professional-2024",
   },
   {
@@ -292,8 +292,175 @@ const certificationCourses = [
     provider: "Amazon Web Services",
     type: "Professional Certificate",
     rating: 4.8,
-    image: "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/f8/0ec136497f4100acb27ca61635c530/V2-AWSCloudSolutionsArchitect-AWS.png?auto=format%2Ccompress&dpr=1&w=320&h=180&fit=crop&q=50",
+    image: "/courses/aws-cloud-architect.png",
     href: "/professional-certificates/aws-cloud-solutions-architect",
+  },
+];
+
+const popularByCategory = [
+  {
+    label: "Popular in Business",
+    href: "/browse/business",
+    courses: [
+      {
+        title: "Google Project Management",
+        provider: "Google",
+        providerLogo: "/partners/google-logo.png",
+        type: "Professional Certificate",
+        rating: 4.8,
+        image: "/courses/popular/google-project-mgmt.jpg",
+        href: "/professional-certificates/google-project-management",
+      },
+      {
+        title: "Foundations of Project Management",
+        provider: "Google",
+        providerLogo: "/partners/google-logo.png",
+        type: "Course",
+        rating: 4.9,
+        image: "/courses/popular/foundations-project-mgmt.jpg",
+        href: "/learn/project-management-foundations",
+      },
+      {
+        title: "AI For Everyone",
+        provider: "DeepLearning.AI",
+        providerLogo: "/partners/deeplearning-ai.png",
+        type: "Course",
+        rating: 4.8,
+        image: "/courses/popular/ai-for-everyone.png",
+        href: "/learn/ai-for-everyone",
+      },
+    ],
+  },
+  {
+    label: "Popular in Data",
+    href: "/browse/data-science",
+    courses: [
+      {
+        title: "Python for Data Science, AI & Development",
+        provider: "IBM",
+        providerLogo: "/partners/ibm.png",
+        type: "Course",
+        rating: 4.6,
+        image: "/courses/popular/python-ds-ibm.jpg",
+        href: "/learn/python-for-applied-data-science-ai",
+      },
+      {
+        title: "Introduction to Artificial Intelligence (AI)",
+        provider: "IBM",
+        providerLogo: "/partners/ibm.png",
+        type: "Course",
+        rating: 4.7,
+        image: "/courses/popular/intro-ai-ibm.png",
+        href: "/learn/introduction-to-ai",
+      },
+      {
+        title: "Introduction to Data Analytics",
+        provider: "IBM",
+        providerLogo: "/partners/ibm.png",
+        type: "Course",
+        rating: 4.8,
+        image: "/courses/popular/intro-data-analytics.jpg",
+        href: "/learn/introduction-to-data-analytics",
+      },
+    ],
+  },
+  {
+    label: "Popular in Tech",
+    href: "/browse/computer-science",
+    courses: [
+      {
+        title: "Python for Everybody",
+        provider: "University of Michigan",
+        providerLogo: "/partners/umich.png",
+        type: "Specialization",
+        rating: 4.8,
+        image: "/courses/popular/python-everybody-spec.jpg",
+        href: "/specializations/python",
+      },
+      {
+        title: "Programming for Everybody (Getting Started with Python)",
+        provider: "University of Michigan",
+        providerLogo: "/partners/umich.png",
+        type: "Course",
+        rating: 4.8,
+        image: "/courses/popular/programming-python.png",
+        href: "/learn/python",
+      },
+      {
+        title: "IBM AI Developer",
+        provider: "IBM",
+        providerLogo: "/partners/ibm.png",
+        type: "Professional Certificate",
+        rating: 4.6,
+        image: "/courses/popular/ibm-ai-developer.png",
+        href: "/professional-certificates/applied-artifical-intelligence-ibm-watson-ai",
+      },
+    ],
+  },
+];
+
+const testimonials = [
+  {
+    name: "Sarah W.",
+    image: "/images/testimonials/sarah-w.jpg",
+    quote:
+      "Coursera\u2019s reputation for high-quality content, paired with its flexible structure, made it possible for me to dive into data analytics while managing family, health, and everyday life.",
+  },
+  {
+    name: "Noeris B.",
+    image: "/images/testimonials/noeris-b.jpg",
+    quote:
+      "Coursera rebuilt my confidence and showed me I could dream bigger. It wasn\u2019t just about gaining knowledge\u2014it was about believing in my potential again.",
+  },
+  {
+    name: "Abdullahi M.",
+    image: "/images/testimonials/abdullahi-m.jpg",
+    quote:
+      "I now feel more prepared to take on leadership roles and have already started mentoring some of my colleagues.",
+  },
+  {
+    name: "Anas A.",
+    image: "/images/testimonials/anas-a.jpg",
+    quote:
+      "Learning with Coursera has expanded my professional expertise by giving me access to cutting-edge research, practical tools, and global perspectives.",
+  },
+];
+
+const faqItems = [
+  {
+    question: "What is Coursera?",
+    answer:
+      "Coursera is a global online learning platform that offers courses, certificates, and degrees from top universities and companies like Google, IBM, Stanford, and more. With over 7,000 courses available, you can learn at your own pace and earn credentials recognized by employers worldwide.",
+  },
+  {
+    question: "How much does Coursera cost?",
+    answer:
+      "Many courses on Coursera are free to audit. To earn a certificate, individual courses typically cost $49\u2013$99. Coursera Plus gives you unlimited access to 90%+ of the catalog for $59/month or $399/year. Professional Certificates and Specializations are included with Coursera Plus.",
+  },
+  {
+    question: "Is it worth getting a Coursera certificate?",
+    answer:
+      "Yes. Coursera certificates are created in partnership with leading companies and universities. Employers recognize these credentials, and 87% of learners report career benefits such as a promotion, raise, or new job after completing a course.",
+  },
+  {
+    question: "Can I get a job with a Coursera certificate?",
+    answer:
+      "Absolutely. Google, IBM, Meta, and other top employers have designed Professional Certificates on Coursera specifically to prepare learners for entry-level roles. Many of these programs include direct connections to hiring partners.",
+  },
+  {
+    question: "How long does it take to complete a Coursera course?",
+    answer:
+      "Individual courses typically take 4\u20136 weeks at a pace of 3\u20135 hours per week. Professional Certificates and Specializations may take 3\u20136 months. You can learn at your own pace and set your own schedule.",
+  },
+  {
+    question: "Are Coursera certificates recognized by employers?",
+    answer:
+      "Yes. Coursera partners with over 350 leading universities and companies to create courses. Professional Certificates from Google, IBM, Meta, and others are specifically designed to help you land a job, and many employers actively seek candidates with these credentials.",
+  },
+  {
+    question: "What is Coursera Plus?",
+    answer:
+      "Coursera Plus is a subscription that gives you unlimited access to over 7,000 courses, Professional Certificates, Specializations, and guided projects. It includes a 7-day free trial and costs $59/month or $399/year.",
   },
 ];
 
@@ -825,6 +992,203 @@ export default function HomePage() {
                   </Link>
                 ))}
               </div>
+            </div>
+          </section>
+
+          {/* ------------------------------------------------------ */}
+          {/* 9d. MOST POPULAR BY CATEGORY                             */}
+          {/* ------------------------------------------------------ */}
+          <section className="mb-8 mx-auto">
+            <h2 className="text-xl font-semibold text-slate-900 mb-4">
+              Most popular by category
+            </h2>
+            <div className="overflow-x-auto scrollbar-hide">
+              <div className="flex gap-6 min-w-[min-content] lg:grid lg:grid-cols-3 lg:min-w-0">
+                {popularByCategory.map((cat) => (
+                  <div key={cat.label} className="min-w-[320px] lg:min-w-0">
+                    <Link
+                      href={cat.href}
+                      className="inline-flex items-center gap-1 text-[#0056d2] font-semibold text-sm hover:underline mb-3"
+                    >
+                      {cat.label}
+                      <svg aria-hidden="true" fill="none" focusable="false" height="16" viewBox="0 0 20 20" width="16">
+                        <path d="M13.125 10.75H4.75a.728.728 0 01-.535-.214.72.72 0 01-.215-.532c0-.21.072-.39.215-.535a.72.72 0 01.535-.219h8.375L9.454 5.579a.721.721 0 01-.225-.527c0-.201.077-.382.23-.541a.745.745 0 011.058.006l4.954 4.96a.722.722 0 01.216.526.76.76 0 01-.052.282.692.692 0 01-.156.236l-4.958 4.958a.681.681 0 01-.521.219.776.776 0 01-.52-.23.766.766 0 01-.23-.544.71.71 0 01.23-.528l3.645-3.646z" fill="currentColor" />
+                      </svg>
+                    </Link>
+                    <div className="space-y-2">
+                      {cat.courses.map((course) => (
+                        <Link
+                          key={course.title}
+                          href={course.href}
+                          className="flex gap-3 p-3 rounded-xl border border-slate-200 bg-white hover:shadow-md transition-shadow"
+                        >
+                          <img
+                            src={course.image}
+                            alt=""
+                            className="h-14 w-20 rounded-lg object-cover flex-shrink-0"
+                            width={80}
+                            height={56}
+                          />
+                          <div className="min-w-0 flex-1">
+                            <div className="flex items-center gap-1.5">
+                              <img
+                                src={course.providerLogo}
+                                alt=""
+                                className="h-4 w-4 rounded-full"
+                                width={16}
+                                height={16}
+                                style={{ border: "1px solid rgba(0,0,0,0.08)" }}
+                              />
+                              <p className="text-xs text-slate-500">{course.provider}</p>
+                            </div>
+                            <h3 className="text-sm font-semibold text-slate-900 leading-tight line-clamp-2 mt-0.5">
+                              {course.title}
+                            </h3>
+                            <div className="flex items-center gap-1.5 mt-1">
+                              <span className="text-xs text-slate-500">{course.type}</span>
+                              <span className="text-xs text-slate-400">&middot;</span>
+                              <Stars rating={course.rating} />
+                            </div>
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* ------------------------------------------------------ */}
+          {/* 9e. COURSERA PLUS & BUSINESS PROMO                       */}
+          {/* ------------------------------------------------------ */}
+          <section className="mb-8 mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {/* Coursera Plus Card */}
+              <Link
+                href="/courseraplus"
+                className="group relative flex flex-col justify-between rounded-2xl overflow-hidden p-6 min-h-[260px]"
+                style={{ background: "linear-gradient(135deg, #0747A6 0%, #0056D2 100%)" }}
+              >
+                <div className="relative z-10">
+                  <img
+                    src="/images/promo/coursera-plus-logo.png"
+                    alt="Coursera Plus"
+                    className="h-6 mb-3"
+                    height={24}
+                  />
+                  <h3 className="text-lg font-bold text-white leading-snug max-w-[260px]">
+                    Unlock access to 10,000+ courses with a subscription
+                  </h3>
+                  <span className="inline-flex items-center gap-1.5 mt-4 text-sm font-semibold text-white group-hover:underline">
+                    Start 7-day free trial
+                    <svg aria-hidden="true" fill="none" focusable="false" height="20" viewBox="0 0 20 20" width="20">
+                      <path d="M13.125 10.75H4.75a.728.728 0 01-.535-.214.72.72 0 01-.215-.532c0-.21.072-.39.215-.535a.72.72 0 01.535-.219h8.375L9.454 5.579a.721.721 0 01-.225-.527c0-.201.077-.382.23-.541a.745.745 0 011.058.006l4.954 4.96a.722.722 0 01.216.526.76.76 0 01-.052.282.692.692 0 01-.156.236l-4.958 4.958a.681.681 0 01-.521.219.776.776 0 01-.52-.23.766.766 0 01-.23-.544.71.71 0 01.23-.528l3.645-3.646z" fill="currentColor" />
+                    </svg>
+                  </span>
+                </div>
+                <img
+                  src="/images/promo/coursera-plus-card.png"
+                  alt=""
+                  className="absolute right-0 bottom-0 h-[200px] w-auto object-contain"
+                  height={200}
+                />
+              </Link>
+
+              {/* Coursera for Business Card */}
+              <Link
+                href="/business"
+                className="group relative flex flex-col justify-between rounded-2xl overflow-hidden p-6 min-h-[260px]"
+                style={{ background: "linear-gradient(135deg, #1F2937 0%, #374151 100%)" }}
+              >
+                <div className="relative z-10">
+                  <img
+                    src="/images/promo/coursera-business-logo.png"
+                    alt="Coursera for Business"
+                    className="h-5 mb-3"
+                    height={20}
+                  />
+                  <h3 className="text-lg font-bold text-white leading-snug max-w-[280px]">
+                    Drive your business forward and empower your teams
+                  </h3>
+                  <span className="inline-flex items-center gap-1.5 mt-4 text-sm font-semibold text-white group-hover:underline">
+                    Try Coursera for Business
+                    <svg aria-hidden="true" fill="none" focusable="false" height="20" viewBox="0 0 20 20" width="20">
+                      <path d="M13.125 10.75H4.75a.728.728 0 01-.535-.214.72.72 0 01-.215-.532c0-.21.072-.39.215-.535a.72.72 0 01.535-.219h8.375L9.454 5.579a.721.721 0 01-.225-.527c0-.201.077-.382.23-.541a.745.745 0 011.058.006l4.954 4.96a.722.722 0 01.216.526.76.76 0 01-.052.282.692.692 0 01-.156.236l-4.958 4.958a.681.681 0 01-.521.219.776.776 0 01-.52-.23.766.766 0 01-.23-.544.71.71 0 01.23-.528l3.645-3.646z" fill="currentColor" />
+                    </svg>
+                  </span>
+                </div>
+                <img
+                  src="/images/promo/coursera-business-card.png"
+                  alt=""
+                  className="absolute right-0 bottom-0 h-[200px] w-auto object-contain"
+                  height={200}
+                />
+              </Link>
+            </div>
+          </section>
+
+          {/* ------------------------------------------------------ */}
+          {/* 9f. WHY PEOPLE CHOOSE COURSERA                           */}
+          {/* ------------------------------------------------------ */}
+          <section className="mb-8 mx-auto">
+            <h2 className="text-xl font-semibold text-slate-900 mb-4">
+              Why people choose Coursera
+            </h2>
+            <div className="overflow-x-auto scrollbar-hide">
+              <div className="flex gap-4 min-w-[min-content] lg:grid lg:grid-cols-4 lg:min-w-0">
+                {testimonials.map((t) => (
+                  <div
+                    key={t.name}
+                    className="flex-shrink-0 w-[300px] lg:w-auto rounded-2xl border border-slate-200 bg-white p-5"
+                  >
+                    <div className="flex items-center gap-3 mb-3">
+                      <img
+                        src={t.image}
+                        alt={t.name}
+                        className="h-12 w-12 rounded-full object-cover"
+                        width={48}
+                        height={48}
+                      />
+                      <h3 className="text-sm font-semibold text-slate-900">{t.name}</h3>
+                    </div>
+                    <p className="text-sm text-slate-600 leading-relaxed">
+                      &ldquo;{t.quote}&rdquo;
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* ------------------------------------------------------ */}
+          {/* 9g. FREQUENTLY ASKED QUESTIONS                            */}
+          {/* ------------------------------------------------------ */}
+          <section className="mb-8 mx-auto">
+            <h2 className="text-xl font-semibold text-slate-900 mb-4">
+              Frequently asked questions
+            </h2>
+            <div className="space-y-0 divide-y divide-slate-200 rounded-xl border border-slate-200 overflow-hidden">
+              {faqItems.map((item) => (
+                <details key={item.question} className="group bg-white">
+                  <summary className="flex items-center justify-between cursor-pointer px-5 py-4 text-sm font-semibold text-slate-900 hover:bg-slate-50 transition-colors">
+                    {item.question}
+                    <svg
+                      aria-hidden="true"
+                      className="h-5 w-5 flex-shrink-0 text-slate-500 transition-transform group-open:rotate-180"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </summary>
+                  <div className="px-5 pb-4 text-sm text-slate-600 leading-relaxed">
+                    {item.answer}
+                  </div>
+                </details>
+              ))}
             </div>
           </section>
 
