@@ -1469,55 +1469,6 @@ export default function HomePage() {
         </div>
       </main>
 
-      {/* ---------------------------------------------------------- */}
-      {/* 10. FOOTER                                                   */}
-      {/* ---------------------------------------------------------- */}
-      <footer className="bg-slate-950 text-slate-300 py-12">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-            {/* CourseHub */}
-            <div className="sm:col-span-2 md:col-span-1">
-              <span className="text-lg font-bold text-white">CourseHub</span>
-              <p className="text-sm text-slate-400 mt-2 leading-relaxed">
-                Empowering 90M+ learners worldwide with world-class education from top universities and companies.
-              </p>
-            </div>
-            {/* Learn */}
-            <div>
-              <h4 className="text-sm font-semibold text-white mb-3">Learn</h4>
-              <ul className="space-y-2 text-sm">
-                <li><Link href="/browse" className="hover:text-white transition-colors">Courses</Link></li>
-                <li><Link href="/browse" className="hover:text-white transition-colors">Certificates</Link></li>
-                <li><Link href="/degrees" className="hover:text-white transition-colors">Degrees</Link></li>
-                <li><Link href="/career-academy" className="hover:text-white transition-colors">Career Academy</Link></li>
-              </ul>
-            </div>
-            {/* Company */}
-            <div>
-              <h4 className="text-sm font-semibold text-white mb-3">Company</h4>
-              <ul className="space-y-2 text-sm">
-                <li><Link href="#" className="hover:text-white transition-colors">About</Link></li>
-                <li><Link href="#" className="hover:text-white transition-colors">Careers</Link></li>
-                <li><Link href="#" className="hover:text-white transition-colors">Blog</Link></li>
-                <li><Link href="#" className="hover:text-white transition-colors">Press</Link></li>
-              </ul>
-            </div>
-            {/* Support */}
-            <div>
-              <h4 className="text-sm font-semibold text-white mb-3">Support</h4>
-              <ul className="space-y-2 text-sm">
-                <li><Link href="#" className="hover:text-white transition-colors">Help Center</Link></li>
-                <li><Link href="#" className="hover:text-white transition-colors">Contact Us</Link></li>
-                <li><Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link></li>
-                <li><Link href="#" className="hover:text-white transition-colors">Terms of Service</Link></li>
-              </ul>
-            </div>
-          </div>
-          <div className="mt-10 pt-6 border-t border-slate-800 text-center text-sm text-slate-500">
-            &copy; 2026 CourseHub. All rights reserved.
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
