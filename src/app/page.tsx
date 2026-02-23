@@ -1,6 +1,7 @@
 import Link from "next/link";
 import HeroCarousel from "@/components/HeroCarousel";
 import ExploreMenu from "./ExploreMenu";
+import StickyHeader from "@/components/StickyHeader";
 
 /* ------------------------------------------------------------------ */
 /*  Static Data                                                        */
@@ -731,87 +732,89 @@ export default function HomePage() {
       </div>
 
       {/* ---------------------------------------------------------- */}
-      {/* 2. TAB BAR                                                   */}
+      {/* 2. TAB BAR + 3. HEADER (Sticky with scroll behavior)          */}
       {/* ---------------------------------------------------------- */}
-      <div style={{ backgroundColor: "#000000" }}>
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 flex items-center gap-0 overflow-x-auto">
-          {[
-            { label: "For Individuals", active: true },
-            { label: "For Businesses", active: false },
-            { label: "For Universities", active: false },
-            { label: "For Governments", active: false },
-          ].map((tab) => (
-            <a
-              key={tab.label}
-              href="#"
-              style={{
-                color: tab.active ? "#ffffff" : "#b0c4de",
-                borderBottom: tab.active ? "2px solid #ffffff" : "2px solid transparent",
-              }}
-              className="whitespace-nowrap px-4 py-2.5 text-sm font-medium transition-colors hover:!text-white"
-            >
-              {tab.label}
-            </a>
-          ))}
-        </div>
-      </div>
-
-      {/* ---------------------------------------------------------- */}
-      {/* 3. HEADER                                                    */}
-      {/* ---------------------------------------------------------- */}
-      <header
-        style={{
-          backgroundColor: "#ffffff",
-          borderBottom: "1px solid #e2e8f0",
-          color: "#000000",
-        }}
-      >
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 flex items-center justify-between h-16 gap-4">
-          {/* Left */}
-          <div className="flex items-center gap-6 flex-shrink-0">
-            <Link href="/" aria-label="CourseHub">
-              <span className="text-2xl font-bold text-[#0056D2]">CourseHub</span>
-            </Link>
-            <nav className="hidden md:flex items-center gap-4">
-              <ExploreMenu />
-              <Link href="#" className="text-sm font-medium text-slate-700 hover:text-slate-900">
-                Degrees
-              </Link>
-            </nav>
-          </div>
-
-          {/* Center - Search */}
-          <div className="hidden sm:flex flex-1 max-w-xl items-center">
-            <div className="relative w-full">
-              <input
-                type="text"
-                placeholder="What do you want to learn?"
-                className="w-full rounded-full border border-slate-600 bg-white py-2 pl-4 pr-12 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#0056D2]"
-              />
-              <button
-                type="button"
-                aria-label="Search"
-                className="absolute right-1 top-1/2 -translate-y-1/2 rounded-full bg-[#0056D2] p-1.5 text-white hover:bg-[#004bb5]"
-              >
-                <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24" aria-hidden="true">
-                  <circle cx={11} cy={11} r={8} />
-                  <path d="m21 21-4.35-4.35" />
-                </svg>
-              </button>
+      <StickyHeader
+        firstHeader={
+          <div style={{ backgroundColor: "#000000" }}>
+            <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 flex items-center gap-0 overflow-x-auto">
+              {[
+                { label: "For Individuals", active: true },
+                { label: "For Businesses", active: false },
+                { label: "For Universities", active: false },
+                { label: "For Governments", active: false },
+              ].map((tab) => (
+                <a
+                  key={tab.label}
+                  href="#"
+                  style={{
+                    color: tab.active ? "#ffffff" : "#b0c4de",
+                    borderBottom: tab.active ? "2px solid #ffffff" : "2px solid transparent",
+                  }}
+                  className="whitespace-nowrap px-4 py-2.5 text-sm font-medium transition-colors hover:!text-white"
+                >
+                  {tab.label}
+                </a>
+              ))}
             </div>
           </div>
+        }
+        secondHeader={
+          <header
+            style={{
+              backgroundColor: "#ffffff",
+              borderBottom: "1px solid #e2e8f0",
+              color: "#000000",
+            }}
+          >
+            <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 flex items-center justify-between h-16 gap-4">
+              {/* Left */}
+              <div className="flex items-center gap-6 flex-shrink-0">
+                <Link href="/" aria-label="CourseHub">
+                  <span className="text-2xl font-bold text-[#0056D2]">CourseHub</span>
+                </Link>
+                <nav className="hidden md:flex items-center gap-4">
+                  <ExploreMenu />
+                  <Link href="#" className="text-sm font-medium text-slate-700 hover:text-slate-900">
+                    Degrees
+                  </Link>
+                </nav>
+              </div>
 
-          {/* Right */}
-          <div className="flex items-center gap-3 flex-shrink-0">
-            <button className="hidden sm:inline-flex text-sm font-medium text-[#0056D2] hover:text-[#003fa3]">
-              Log In
-            </button>
-            <button className="rounded-md border border-[#0056D2] px-4 py-1.5 text-sm font-semibold text-[#0056D2] hover:bg-[#0056D2] hover:text-white transition-colors">
-              Join for Free
-            </button>
-          </div>
-        </div>
-      </header>
+              {/* Center - Search */}
+              <div className="hidden sm:flex flex-1 max-w-xl items-center">
+                <div className="relative w-full">
+                  <input
+                    type="text"
+                    placeholder="What do you want to learn?"
+                    className="w-full rounded-full border border-slate-600 bg-white py-2 pl-4 pr-12 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#0056D2]"
+                  />
+                  <button
+                    type="button"
+                    aria-label="Search"
+                    className="absolute right-1 top-1/2 -translate-y-1/2 rounded-full bg-[#0056D2] p-1.5 text-white hover:bg-[#004bb5]"
+                  >
+                    <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24" aria-hidden="true">
+                      <circle cx={11} cy={11} r={8} />
+                      <path d="m21 21-4.35-4.35" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              {/* Right */}
+              <div className="flex items-center gap-3 flex-shrink-0">
+                <button className="hidden sm:inline-flex text-sm font-medium text-[#0056D2] hover:text-[#003fa3]">
+                  Log In
+                </button>
+                <button className="rounded-md border border-[#0056D2] px-4 py-1.5 text-sm font-semibold text-[#0056D2] hover:bg-[#0056D2] hover:text-white transition-colors">
+                  Join for Free
+                </button>
+              </div>
+            </div>
+          </header>
+        }
+      />
 
       {/* ---------------------------------------------------------- */}
       {/* 4. HERO CAROUSEL                                             */}
