@@ -10,16 +10,22 @@ export default function StickyHeader({
   secondHeader: ReactNode;
 }) {
   const [showFirst, setShowFirst] = useState(true);
+  const [firstHeight, setFirstHeight] = useState(0);
+  const firstRef = useRef<HTMLDivElement>(null);
   const lastScrollY = useRef(0);
+
+  useEffect(() => {
+    if (firstRef.current) {
+      setFirstHeight(firstRef.current.offsetHeight);
+    }
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
       const y = window.scrollY;
       if (y > lastScrollY.current && y > 50) {
-        // scrolling DOWN → show both
         setShowFirst(true);
       } else {
-        // scrolling UP → hide 1st, show only 2nd
         setShowFirst(false);
       }
       lastScrollY.current = y;
@@ -30,13 +36,11 @@ export default function StickyHeader({
   }, []);
 
   return (
-    <div className="sticky top-0 z-50">
-      <div
-        className="transition-all duration-300 overflow-hidden"
-        style={{ maxHeight: showFirst ? "100px" : "0px" }}
-      >
-        {firstHeader}
-      </div>
+    <div
+      className="sticky z-50 transition-[top] duration-300"
+      style={{ top: showFirst ? 0 : -firstHeight }}
+    >
+      <div ref={firstRef}>{firstHeader}</div>
       {secondHeader}
     </div>
   );
