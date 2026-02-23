@@ -803,7 +803,7 @@ export default function HomePage() {
 
           {/* Right */}
           <div className="flex items-center gap-3 flex-shrink-0">
-            <button className="hidden sm:inline-flex text-sm font-medium text-slate-700 hover:text-slate-900">
+            <button className="hidden sm:inline-flex text-sm font-medium text-[#0056D2] hover:text-[#003fa3]">
               Log In
             </button>
             <button className="rounded-md border border-[#0056D2] px-4 py-1.5 text-sm font-semibold text-[#0056D2] hover:bg-[#0056D2] hover:text-white transition-colors">
